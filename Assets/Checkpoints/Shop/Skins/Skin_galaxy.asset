@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_galaxy
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: galaxy
+  displayName: Galaxy
+  tagline: A universe on every face.
+  rarity: 3
+  price: 5000
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: a9cf1ff7b2093fd459953cb3ad852da4, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 0.48, g: 0.18, b: 0.72, a: 1}
+  overrideTrail: 1
+  trailHead: {r: 1, g: 0.92, b: 1, a: 1}
+  trailMid: {r: 0.62, g: 0.35, b: 1, a: 1}
+  trailTail: {r: 0.2, g: 0.1, b: 0.6, a: 0}
+  attachedParticles: {fileID: 5616544734176767380, guid: 14b0903803153bd47b469de6f900ff38, type: 3}
+  rollSfx: {fileID: 8300000, guid: 6904e1519a68e114e92af7b9f0ffdb69, type: 3}
+  landingSquash: 0.06
+  deathBurstPrefab: {fileID: 3939349353406926244, guid: bcaae0d0c06689744b0215dab3bd0efb, type: 3}

@@ -1,0 +1,12 @@
+{
+    "asset": "bf7469c1c786dcf4d9e4326d20f868f2",
+    "fileName": "019dc1bf-4690-79ea-bd02-0c9d8e84cb39.pose.json",
+    "prompt": "Fast humanoid run animation, in-place, energetic, looping.",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 1418292420,
+    "w3CTraceId": "13d8ccd36d1e1790718d58447e2a25cf",
+    "feedback": 0,
+    "isTrimmed": false
+}

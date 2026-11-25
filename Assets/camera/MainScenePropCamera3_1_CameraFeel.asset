@@ -1,0 +1,326 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a3ecec3f19c64b41ab9e4c96fcf9052, type: 3}
+  m_Name: MainScenePropCamera3_1_CameraFeel
+  m_EditorClassIdentifier: Assembly-CSharp::CameraFeelProfile
+  speedLow: 11.9
+  speedHigh: 32
+  runnerSafeX: 0.45
+  runnerSafeYMin: -0.6
+  runnerSafeYMax: 0.3
+  hudTopReserve: 0.12
+  softFrameLimit: 0.8
+  hardFrameLimit: 0.92
+  mustSeePadding: 0.75
+  zoomFloor: 23.1
+  zoomCap:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 28
+      inSlope: 0
+      outSlope: 4
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 32
+      inSlope: 4
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  absoluteZoomCap: 34
+  boostZoomMultiplier: 1.1
+  boostZoomInSeconds: 0.7
+  boostZoomOutSeconds: 0.7
+  secondsPer90:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -0.100000024
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.9
+      inSlope: -0.100000024
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  rotationMinSeconds: 0.6
+  blockRotationIfBoostOrBridgeWithinLegs: 2
+  boomSmoothTime: 0.5
+  leanDegrees: 4
+  leanSmoothTime: 0.9
+  debugGizmos: 1
+  logDecisions: 0
+  emergencySmoothTime: 0.12
+  emergencyLookAhead: 0.25
+  lookPredict:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.6
+      inSlope: 0
+      outSlope: 0.19999999
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.8
+      inSlope: 0.19999999
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  minHoldSeconds:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1
+      inSlope: 0
+      outSlope: -0.19999999
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.8
+      inSlope: -0.19999999
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  targetHold: 1.6
+  maxPlanSeconds: 5
+  minGlide:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.2
+      inSlope: 0
+      outSlope: -0.20000005
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1
+      inSlope: -0.20000005
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  maxGlideSpeedFactor: 1.5
+  postGlideCalm: 0.25
+  skipGlideDistance: 2.5
+  skipGlideZoomPct: 0.04
+  planFromGlideEndShare: 0
+  trailingOffsetMax: 0.35
+  lookAheadSeconds:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 2
+      inSlope: 0
+      outSlope: 0.4000001
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 2.4
+      inSlope: 0.4000001
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  leadWeight: 0.55
+  leadMax: 0.38
+  leadSmoothTime:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 0.75
+      inSlope: 0
+      outSlope: -0.19999999
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.55
+      inSlope: -0.19999999
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  followSmoothTime: 0.1
+  followSpeedFactor: 1.35
+  followSpeedPlus: 4
+  followMaxAccel: 90
+  zoomHysteresis: 0.06
+  zoomWidenPerSecond: 3.5
+  zoomTightenPerSecond: 1.5
+  zoomTightenDelay: 1.2
+  zoomSmoothTime: 0.6
+  slideSoftSmooth: 0.35
+  slideHardSmooth: 0.08
+  followSoftLimit: 0.8
+  followHardLimit: 0.92
+  railSpeedSmooth: 0.5
+  railSigmaSeconds:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 1.15
+      inSlope: 0
+      outSlope: -0.5
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 0.65
+      inSlope: -0.5
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  railLeadD: 0.35
+  railTeleportDistance: 5
+  railRestartBlend: 0.3
+  leadRoom: 0.25
+  leadRoomLookSeconds: 1
+  leadRoomSmooth: 0.6
+  railLeadMaxD: 0.3
+  railLeadMaxE: 0.55
+  railLeanDegrees: 3
+  railLeanSmooth: 0.9
+  ambientYawRateMax: 2
+  springOmega: 2.6
+  springMaxAccel: 20
+  springAccelSpeedScaleMax: 3
+  flowMax: 45
+  rotSecondsPer90: 2.1
+  rotSecondsPer180: 3
+  rotPeakDegPerSec: 70
+  rotMinBudgetShare: 0.35
+  railHardLimit: 0.92
+  railNetLookAhead: 0.25
+  railNetSmooth: 0.12
+  railNetRelease: 1.2
+  railZoomFloorD: 23.1
+  railZoomFloorE: 25
+  railZoomHysteresis: 0.06
+  railZoomWidenPerSecond: 2.5
+  railZoomTightenPerSecond: 1
+  railZoomTightenDelay: 1.5
+  railZoomSmooth: 1
+  thumbZoneHeight: 0.24
+  thumbZoneWidth: 0.38
+  gazeZone: 0.6
+  useSafeArea: 1
+  zoneLegs: 3
+  zoneMaxLegs: 5
+  zoneMinSeconds: 3.5
+  railLeadE: 0.45
+  followWeight: 0.8
+  transitionStartFrac: 0.4
+  transitionDur:
+    serializedVersion: 2
+    m_Curve:
+    - serializedVersion: 3
+      time: 0
+      value: 2.4
+      inSlope: 0
+      outSlope: -0.60000014
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    - serializedVersion: 3
+      time: 1
+      value: 1.8
+      inSlope: -0.60000014
+      outSlope: 0
+      tangentMode: 0
+      weightedMode: 0
+      inWeight: 0
+      outWeight: 0
+    m_PreInfinity: 2
+    m_PostInfinity: 2
+    m_RotationOrder: 4
+  scoreCornerInFrame: 3
+  scoreTurnFaceVisible: 2
+  scoreOccluded: -2.5
+  scoreApproachCube: -0.5
+  scoreVariety: 0.8
+  scoreAngleChangeCost: 11
+  scorePanPerUnit: 0.08
+  scoreThumb: -2
+  scorePortraitLeg: 0.5

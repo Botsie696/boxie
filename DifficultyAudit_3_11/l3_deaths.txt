@@ -1,0 +1,15 @@
+clear
+death 1: cause=corner score=125 pos=20 cyc=2 boost=False mode=-1 slowMo=False runway=False decoy=False taps=2 cubes=31 spd=23.8 secs=1.26 floor=0.89 side=3 turn=1 land=3 q=0
+death 2: cause=corner score=136 pos=31 cyc=2 boost=False mode=-1 slowMo=True runway=False decoy=False taps=1 cubes=6 spd=24.5 secs=0.20 floor=0.49 side=3 turn=2 land=3 q=0
+death 3: cause=corner score=120 pos=15 cyc=2 boost=False mode=-1 slowMo=False runway=False decoy=False taps=1 cubes=31 spd=23.5 secs=1.27 floor=0.64 side=0 turn=3 land=0 q=0
+death 4: cause=corner score=121 pos=16 cyc=2 boost=False mode=-1 slowMo=True runway=False decoy=False taps=1 cubes=5 spd=23.6 secs=0.17 floor=0.50 side=3 turn=2 land=3 q=0
+death 5: cause=corner score=113 pos=8 cyc=2 boost=False mode=-1 slowMo=True runway=False decoy=False taps=1 cubes=7 spd=23.2 secs=0.25 floor=0.50 side=2 turn=2 land=1 q=0
+death 6: cause=corner score=140 pos=35 cyc=2 boost=False mode=-1 slowMo=True runway=False decoy=False taps=2 cubes=5 spd=24.7 secs=0.16 floor=0.71 side=1 turn=3 land=1 q=0
+death 7: cause=corner score=122 pos=17 cyc=2 boost=True mode=1 slowMo=False runway=False decoy=False taps=2 cubes=26 spd=28.4 secs=0.88 floor=0.84 side=3 turn=1 land=3 q=0
+death 8: cause=corner score=158 pos=53 cyc=2 boost=True mode=3 slowMo=False runway=False decoy=False taps=2 cubes=28 spd=31.3 secs=0.86 floor=0.81 side=3 turn=3 land=1 q=0
+death 9: cause=corner score=140 pos=35 cyc=2 boost=False mode=-1 slowMo=False runway=False decoy=False taps=1 cubes=30 spd=24.7 secs=1.17 floor=0.62 side=3 turn=3 land=0 q=0
+death 10: cause=corner score=133 pos=28 cyc=2 boost=False mode=-1 slowMo=True runway=False decoy=False taps=2 cubes=6 spd=24.3 secs=0.20 floor=0.72 side=0 turn=2 land=0 q=0
+clear
+death 11: cause=corner score=160 pos=55 cyc=2 boost=False mode=-1 slowMo=False runway=False decoy=False taps=2 cubes=34 spd=26.3 secs=1.25 floor=0.86 side=1 turn=3 land=1 q=0
+death 12: cause=corner score=123 pos=18 cyc=2 boost=True mode=0 slowMo=False runway=False decoy=False taps=2 cubes=27 spd=28.4 secs=0.91 floor=0.84 side=3 turn=1 land=3 q=0
+DONE clears 2 attempts 14

@@ -1,0 +1,12 @@
+{
+    "asset": "0740add765f24cf4abaf8528c3315db4",
+    "fileName": "019dc1bb-548d-775e-958c-a306bd20e402.pose.json",
+    "prompt": "A standard humanoid running animation, energetic and looping.",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 1120660504,
+    "w3CTraceId": "1a2c12cbaab4cce607b72f3bc77d7b29",
+    "feedback": 0,
+    "isTrimmed": false
+}

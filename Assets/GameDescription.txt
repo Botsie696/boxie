@@ -1,0 +1,196 @@
+GAME DESCRIPTION - CUBE-RAIL ENDLESS RUNNER (Unity)
+THE MAIN GAME = Assets/MainScene prop.unity (URP, portrait, orthographic isometric)
+Other scenes (MainScene, MainScene prop camera, TrialScene 1-4, TrialMonument,
+TrialCircus, tutorial) share the same code; this file describes MainScene prop with
+its actual serialized values. Values below are read from the scene file, not the
+script defaults. Items marked [NONE FOUND] were searched for and are not in the project.
+
+=====================================================================
+1. ONE-LINE PITCH
+=====================================================================
+A small cube auto-runs along a procedurally generated, ever-turning chain of cubes
+(Monument Valley look). The only input is LEFT / RIGHT tap: it rolls the runner around
+the path onto another face of the cube chain, so it always stands on the face that
+still has track ahead. Wrong face at a turn / bridge, or a red pyramid = death.
+Endless, score-chasing, one restart tap.
+
+=====================================================================
+2. CORE MECHANICS & CONTROL LOGIC
+=====================================================================
+What a tap does (CubeRailRunner, Assets/PlayerController.cs)
+- A tap ROLLS the runner 90 degrees around the path's long axis onto the neighbouring
+  face (faces: 0 top, 1 right, 2 bottom, 3 left). Not lane change / steering / jump.
+  The position swings on an arc round the cube edge while the body rotation is slerped
+  (0.15 s), then re-seats on the new face. Single rolls have a 0.12 s cooldown.
+- DOUBLE-TAP (same side twice within 0.25 s) = FLIP to the opposite face (180 deg,
+  0.18 s, ignores cooldown, clears queue). Needed for boost zig-zags and some turns.
+- Optional FLICK mode (ControlSettings, saved): swipe left/right rolls, swipe up/down
+  flips, fires as soon as the finger moves 40 px. Default = tap / double-tap.
+- Touch: swipe >= 50 px = that direction, otherwise tap left or right half of screen.
+  Keyboard A/D or arrows. Inputs are buffered (max 5) and consumed in FixedUpdate so
+  presses during a roll are never lost.
+- Left/right are SCREEN-relative (cameraRelativeControls = on). The mapping is locked
+  per leg: re-read from the camera only when the runner lands on a new heading
+  (>= 30 deg) AND the camera has turned > 10 deg. A camera swing never flips controls
+  mid-leg.
+
+Movement / physics
+- Rigidbody (no gravity, interpolated, continuous, constraints freeze rotation), sphere
+  collider r 0.4, zero friction, path layer excluded from collisions. Every FixedUpdate
+  velocity = forward along the cube (MoveSpeed) + a snap velocity to the target point on
+  the current face (sideSwitchSpeed 30). So it is velocity-driven snapping, not forces.
+- Two raycasts per physics step: forward probe (length scales with speed so a fast
+  runner cannot skip a corner) finds the next cube; ground probe along the face's
+  inward normal detects "no cube under me" -> isFlying.
+- Path is fully procedural: DynamicPathGenerator (partial class across ~12 files) lays
+  legs of cubes ahead and removes them behind, grouped in sealed ZONES of 2-3 legs
+  (targetZoneSeconds 5, keeps 2 zones / 6 legs ahead, 5 zones behind). Turn choice
+  weighted left 4 / right 4 / up 1 / down 1 with a re-randomised bias every 5 points and
+  a 34% "standout" turn. Leg length 7-20 cubes, scaled with speed so a leg lasts about
+  the same time at any speed.
+
+Failure state
+- Fall: off the path for 0.15 s = game over. Cause: standing on the wrong face at a
+  turn, missing a corner, taking a decoy dead-end, or the wrong side of a bridge.
+- Obstacle: red pyramid (PathObstacleGuard, trigger) = runner stops dead and shatters.
+- It is easy to fail and purely skill-based: short fail window (0.15 s), speed keeps
+  climbing to 4x, corner faces must be chosen ahead of time. There are no lives or
+  revives; a run ends on the first mistake.
+
+=====================================================================
+3. OBSTACLES / HAZARDS / SPECIAL SECTIONS (MainScene prop values)
+=====================================================================
+- Corners: every turn requires the face that points toward the outgoing leg. Glowing
+  yellow chevrons (TurnFaceArrows) are painted on that face at the corner end of the
+  current leg and chase toward the corner; a yellow corner GEM sits in the notch of
+  each sideways turn. Coins also sit on the correct face (see meta section).
+- Red pyramid obstacle: from leg 10, 45% of legs, ONE pyramid (base 0.8 cube, height
+  2.2) on the turn face near mid-leg (12% spread), 3-cube edge margin, yellow glow.
+- Bridge legs: from leg 25, 30% of legs are laid 1.5x long; the middle is swapped for a
+  slatted RED plank on ONE of the 4 faces (black outline). Standing on the wrong face
+  when crossing = death (position-based BridgePlankGuard). 30% of bridges are
+  multi-plank (1-3 planks, 1.4x more length, >= 4 plain cubes between). Bridge legs also
+  get an arch decoration (BridgeArchDecoration). No coins on bridges.
+- Decoy forks: from leg 20, 20% chance of a 3-4 cube dead-end stub off a corner,
+  shaded like a real leg; taking it = fall.
+- Boost sections: every 12-16 legs a 7-leg zig-zag of 12-cube legs that needs a
+  double-tap flip each corner. Speed x1.2 (eased in over 0.25 s), camera zooms out to
+  1.3x, apex coins, RunnerBoostFX.
+- Portal zone change: every 30 legs the path runs into a flat red door (or, in this
+  scene, a small glowing "level marker" cube with rays; useLevelMarker) via a 15-cube
+  runway; must cross it on the TOP face (side 0). World retints red as you cross
+  (PortalZoneController), bonus coins, camera yaw +45.
+
+=====================================================================
+4. CAMERA & PERSPECTIVE
+=====================================================================
+- Strict orthographic isometric: tilt 35.264 deg, yaw offset 45. Main Camera ortho size
+  22 (authored floor: minOrthoSize 22, never zoom below), boom distance 60.
+- CameraParentRotator (on CameraParent) is a state machine: Static / Transitioning.
+  The generator plans a yaw per zone (PlanCameraYaws, dynamic programming with
+  angleChangeCost 11, yaw quantised to 90 deg steps) so the whole zone is framed
+  (framingPadding 3). Entering a new zone triggers a glide (1.2 s, shortened to
+  match runner speed, min 0.6 s; ~0.7 s per 90 deg), held at least 2.5 s between shots.
+- Follow: followPlayer 0.45, followSmoothTime 0.15, look-ahead 10-20 cubes and 1
+  corner, soft/hard frame limit 0.85/0.88 keeps the runner in view, zoom fits the
+  visible track with smoothing (0.5 s, tighten 6/s).
+- Reacts to state: slow in-place lean/sway (5 deg, 0.8 s smoothing); boost zoom-out
+  x1.3 (in 0.5 s, out 0.25 s); on death the camera follows the fall arc ~0.2 s, then
+  FREEZES to watch the shatter, then rewinds (0.4 s ease-out) on restart.
+- NOT active in this scene: speed-based zoom (speedZoomEnabled 0), flip-impact
+  shake/punch (flipImpactEnabled 0; shakeMagnitude 0.4/0.15 s and punchAmount 1.5 exist
+  but are gated off). No FOV effects (orthographic).
+
+=====================================================================
+5. ATMOSPHERE, ENVIRONMENT & SHADERS
+=====================================================================
+- Art: low-poly Monument Valley look. Blue path cubes, pale sky, soft shadows, warm
+  yellow accents (gems, chevrons, coins), RED for danger (planks, pyramids, portal).
+- Scene contents: MonumentEnvironment + MonumentValleyScene (hand-placed tower of cubes
+  with yellow TOTEM blocks: SDF-drawn eye / maze / paths / rivets, 3D eye + rivet discs),
+  SoftSun directional light, MonumentShadowFloor, MonumentSkyBackdrop.
+- Custom shaders (Assets/TrialMonument/Shaders + Assets/Special Materials):
+  TotemBlock (unlit URP SDF designs, flat per-face tints, contact-shadow circles; also
+  used for the red pyramid), MonumentBlock, MonumentSky, MonumentShadowFloor, Portal
+  Block/Ray/Void/Overlay.
+- Route readability without perspective: PathDepthShading darkens/fades cubes per cube
+  by distance ahead along the route; ActiveFaceHighlight draws a lit lane on the face the
+  runner is on and flashes with a sweeping band when you switch face.
+- Post-processing: a PostProcessVolume (global) exists but its profile
+  (TrialScene_PostProcess) has NO effects. So no bloom / vignette / colour grading /
+  AO currently. Glows are fake (additive quads, shader tricks).
+- Environment: the path is procedural and rebuilt on the fly; background props in this
+  scene are hand-placed (no procedural houses in this scene). Path cubes are clones of
+  a single cube prefab (firstCube / cubePrefab).
+
+=====================================================================
+6. GAME FEEL & JUICE (what actually exists)
+=====================================================================
+On tap
+- Haptics.LightImpact() per roll.
+- Body arc + rotation roll; ActiveFaceHighlight flash + sweep band on the new face.
+- RunnerTrailFX: restyled ribbon trail, wisps, spark motes, shockwave rings on
+  gameplay events (colours shift with speed). Never touch trail.time.
+- Tap / roll SOUND [NONE FOUND]. No squash & stretch [NONE FOUND].
+
+Success communication
+- Coins: spinning glowing coins with blob shadow, picked up by proximity radius 0.7
+  (no colliders). Counter in HUD. Coin pickup SOUND [NONE FOUND].
+- Corner gems, chevrons, guide-lane on correct face; portal + level marker as
+  milestone; boost zig-zag with camera zoom-out is the main "flow" moment.
+- No score popups, combo, or perfect-turn reward. Audio: [NONE FOUND] beyond the fall
+  chime (no music, no coin/boost/portal sounds).
+
+Failure communication (GameOverSequence)
+- Runner leaves the path with its momentum, gravity on, sails off in an arc; the next
+  cubes of the missed route light up as GHOST cubes (shows what you should have done)
+  then breathe; camera locks at t=0.2 s; at t=0.3 s the runner shatters into pooled
+  shards; synthesised "stone dropped down a well" falling-sine chime with echoes.
+  Obstacle hit = stop dead, shatter in place, shards keep impact direction.
+- HUD (RunnerHUD, built in code): score top-left, coin counter, then game-over panel
+  with big final score, BEST / "NEW BEST", a "near miss" line when within 90% of best,
+  and a tap-to-restart prompt. Soft restart (~1-2 s): path sinks, new one rises,
+  camera rewinds; no scene reload.
+
+=====================================================================
+7. PROGRESSION & PACING
+=====================================================================
+- Endless score-chaser. No levels, no lives, no checkpoints. Portal every 30 legs is a
+  visual/zone milestone, not a level.
+- Score = coins/points; speed rises in STEPS on score (steppedSpeed): start 11.2, every
+  5-10 points speed += 1.05 (step grows x1.2), ceiling 10x cap logic (maxSpeed starts
+  47.6, raised by generator). Leg length also grows (pathGrowth 1.2, max 35 cubes) so
+  reaction time stays comparable while corners arrive faster.
+- Difficulty gates by leg: obstacle pyramid from leg 10, decoy forks from leg 20,
+  bridges from leg 25, boost zig-zag every 12-16 legs, portal every 30.
+- Turn bias re-randomised every 5 points; 34% standout turns; leftWeight = rightWeight.
+- Coin lines: 8-15 per run of coins, 50% spawn chance, 70% chance a coin run starts on
+  the WRONG face (temptation lure, smaller coins) - risk/reward.
+
+=====================================================================
+8. RETENTION & META-GAME
+=====================================================================
+Present
+- Best score saved in PlayerPrefs (key RunnerBest_<sceneName>), "NEW BEST" and
+  "near miss" (>= 90% of best) messaging on the game-over screen.
+- Frictionless one-tap restart with an animated soft reset = "one more run".
+- Control mode (tap/double-tap vs flick) saved. One-time tutorial scene.
+- Coins collected and shown per run.
+
+Not present [NONE FOUND]
+- Persistent currency, shop, skins/trails unlocks, daily rewards / streaks, missions,
+  achievements, leaderboards, ads / IAP, revive, music, settings menu beyond control
+  mode, analytics. Coins reset on restart (CoinCounterUI.ResetCount).
+
+=====================================================================
+9. KEY FILES
+=====================================================================
+Assets/MainScene prop.unity                      - the main game scene
+Assets/PlayerController.cs (CubeRailRunner)      - input, rolling, transitions, fail
+Assets/Scripts/DynamicPathGenerator*.cs          - path, speed steps, Coins, Gems, Boost,
+  Decoy, Obstacle, Reset, Tutorial (+ TrialMonument/Scripts/...Bridge, ...Portal)
+Assets/Scripts/CameraParentRotator.cs            - zone camera rig
+Assets/Scripts/GameOverSequence.cs, RunnerHUD.cs, RunnerTrailFX.cs, RunnerBoostFX.cs,
+  ActiveFaceHighlight.cs, TurnFaceArrows.cs, PathDepthShading.cs, PathObstacleGuard.cs,
+  Haptics.cs, ControlSettings.cs, AutoPlayer.cs (L-key bot used for testing)
+Assets/TrialMonument/ (shaders, portal zone, bridge guard) ; Assets/Special Materials

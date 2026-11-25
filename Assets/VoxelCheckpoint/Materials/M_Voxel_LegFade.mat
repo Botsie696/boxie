@@ -1,0 +1,91 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_Voxel_LegFade
+  m_Shader: {fileID: 4800000, guid: d4f6b5ee7f9b4de4294baa92bdf07793, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords:
+  - _EMISSION
+  - _SURFACE_TYPE_TRANSPARENT
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _AlphaClip: 0
+    - _Blend: 0
+    - _ChasmFogMix: 0.2
+    - _Cull: 2
+    - _DstBlend: 10
+    - _DstBlendAlpha: 10
+    - _EdgeAllAxes: 0
+    - _EdgeStrength: 0
+    - _EdgeWidth: 0.025
+    - _FogColorFromChasm: 1
+    - _FogEnd: 60
+    - _FogMax: 0.4
+    - _FogStart: 14
+    - _GlowBase: 0.55
+    - _GlowGain: 0.3
+    - _GrainDarkBias: 0.5
+    - _GrainScale: 14
+    - _GrainStrength: 0
+    - _PointLightStrength: 0.5
+    - _PointLightWrap: 0.35
+    - _RunnerGlowDim: 0.25
+    - _RunnerGlowEdge: 1
+    - _RunnerGlowStrength: 0
+    - _ScreenFogHeight: 0.32
+    - _ScreenFogStrength: 0.75
+    - _SeamStrength: 0
+    - _SeamWidth: 0.016
+    - _ShadowStrength: 0.3
+    - _SideSoftness: 0
+    - _SrcBlend: 5
+    - _SrcBlendAlpha: 1
+    - _StencilComp: 8
+    - _StencilRef: 0
+    - _Surface: 1
+    - _TileGroove: 0.035
+    - _TileInset: 0.13
+    - _TileSide: 0
+    - _TileTop: 0
+    - _TopSharpness: 12
+    - _ZWrite: 1
+    - _ZoneGone: 0
+    m_Colors:
+    - _BaseColor: {r: 1, g: 1, b: 1, a: 1}
+    - _BottomColor: {r: 0.2901961, g: 0.1254902, b: 0.09411765, a: 1}
+    - _Color: {r: 1, g: 1, b: 1, a: 1}
+    - _EdgeColor: {r: 1, g: 1, b: 1, a: 1}
+    - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
+    - _EmissiveColor: {r: 0, g: 0, b: 0, a: 1}
+    - _FogBottomColor: {r: 0.54901963, g: 0.78431374, b: 0.9254902, a: 1}
+    - _FogTopColor: {r: 0.8039216, g: 0.92156863, b: 0.9647059, a: 1}
+    - _GlowTint: {r: 0.9647059, g: 0.78431374, b: 0.18039216, a: 1}
+    - _LeftColor: {r: 0.47843137, g: 0.20784314, b: 0.15686275, a: 1}
+    - _RightColor: {r: 0.72156864, g: 0.3529412, b: 0.22745098, a: 1}
+    - _RunnerGlowColor: {r: 0.24999997, g: 0.95, b: 0.9, a: 1}
+    - _SeamColor: {r: 0.78, g: 0.8, b: 0.78, a: 1}
+    - _ShadowColor: {r: 0.2901961, g: 0.3529412, b: 0.6117647, a: 1}
+    - _TileGrooveColor: {r: 0.62, g: 0.45, b: 0.34999996, a: 1}
+    - _TileLipColor: {r: 1.15, g: 1.08, b: 1, a: 1}
+    - _TilePanelColor: {r: 0.93, g: 0.9, b: 0.88, a: 1}
+    - _TopColor: {r: 0.9647059, g: 0.78431374, b: 0.18039216, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

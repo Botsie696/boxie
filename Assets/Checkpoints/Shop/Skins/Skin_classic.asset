@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_classic
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: classic
+  displayName: Totem
+  tagline: The original runner.
+  rarity: 0
+  price: 0
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: cdffde7143addb1459c610bb1739fa2b, type: 2}
+  keepSceneLook: 1
+  uiColor: {r: 0.96, g: 0.97, b: 1, a: 1}
+  characterPrefab: {fileID: 6702426059428766213, guid: bf18f3bd008392944bb4b770d195d89d, type: 3}
+  sceneCharacter: 1
+  overrideTrail: 0
+  trailHead: {r: 0, g: 0, b: 0, a: 0}
+  trailMid: {r: 0, g: 0, b: 0, a: 0}
+  trailTail: {r: 0, g: 0, b: 0, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 0}
+  landingSquash: 0
+  deathBurstPrefab: {fileID: 0}

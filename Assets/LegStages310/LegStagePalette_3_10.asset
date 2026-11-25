@@ -1,0 +1,287 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3b1b33c0667141d4daa7665a55fca85a, type: 3}
+  m_Name: LegStagePalette_3_10
+  m_EditorClassIdentifier: Assembly-CSharp::LegStagePalette
+  levels:
+  - name: Start
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8980392, g: 0.28235295, b: 0.3019608, a: 1}
+    - face: {r: 0.7882353, g: 0.68235296, b: 0.5019608, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.54901963, g: 0.35686275, b: 0.8784314, a: 1}
+    - face: {r: 0.7882353, g: 0.5019608, b: 0.3764706, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8784314, g: 0.30980393, b: 0.6039216, a: 1}
+    obstacleRunway:
+      face: {r: 0.8862745, g: 0.87058824, b: 0.827451, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.24
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Crimson
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.14509805, g: 0.827451, b: 0.7607843, a: 1}
+    - face: {r: 0.9137255, g: 0.7019608, b: 0.74509805, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.09411765, g: 0.65882355, b: 0.56078434, a: 1}
+    - face: {r: 0.7607843, g: 0.52156866, b: 0.22745098, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.22745098, g: 0.65882355, b: 0.9411765, a: 1}
+    obstacleRunway:
+      face: {r: 0.9098039, g: 0.8862745, b: 0.9254902, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.24
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Toon
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8980392, g: 0.3137255, b: 0.23529412, a: 1}
+    - face: {r: 0.6901961, g: 0.54901963, b: 0.36862746, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.48235294, g: 0.24705882, b: 0.65882355, a: 1}
+    - face: {r: 0.63529414, g: 0.36078432, b: 0.2901961, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.20392157, g: 0.28235295, b: 0.7529412, a: 1}
+    obstacleRunway:
+      face: {r: 0.9137255, g: 0.88235295, b: 0.8117647, a: 1}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.26
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Pixel
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8784314, g: 0.1882353, b: 0.30588236, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.24705882, g: 0.8156863, b: 0.5411765, a: 1}
+      pickTo: {r: 0.95686275, g: 0.627451, b: 0.47843137, a: 1}
+      pickWidth: 0.09
+      stripes: 0
+      obstacle: {r: 0.49019608, g: 0.9411765, b: 0.9764706, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.24705882, g: 0.8156863, b: 0.5411765, a: 1}
+      pickTo: {r: 0.89411765, g: 0.88235295, b: 0.8980392, a: 1}
+      pickWidth: 0.09
+      stripes: 0
+      obstacle: {r: 0.8666667, g: 0.54901963, b: 0.39215687, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.24705882, g: 0.8156863, b: 0.5411765, a: 1}
+      pickTo: {r: 0.8784314, g: 0.4117647, b: 0.5058824, a: 1}
+      pickWidth: 0.09
+      stripes: 0.22
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Storybook
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.48235294, g: 0.24705882, b: 0.76862746, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.85882354, g: 0.3882353, b: 0.17254902, a: 1}
+      pickTo: {r: 0.72156864, g: 0.22745098, b: 0.16470589, a: 1}
+      pickWidth: 0.05
+      stripes: 0
+      obstacle: {r: 0.12156863, g: 0.47843137, b: 0.3529412, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.85882354, g: 0.3882353, b: 0.17254902, a: 1}
+      pickTo: {r: 0.47843137, g: 0.24313726, b: 0.54901963, a: 1}
+      pickWidth: 0.05
+      stripes: 0
+      obstacle: {r: 0.8784314, g: 0.47843137, b: 0.12156863, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.85882354, g: 0.3882353, b: 0.17254902, a: 1}
+      pickTo: {r: 0.22745098, g: 0.22745098, b: 0.26666668, a: 1}
+      pickWidth: 0.05
+      stripes: 0.2
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Flower
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.20392157, g: 0.28235295, b: 0.84705883, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.30980393, g: 0.65882355, b: 0.2509804, a: 1}
+      pickTo: {r: 0.11764706, g: 0.43137255, b: 0.3529412, a: 1}
+      pickWidth: 0.1
+      stripes: 0
+      obstacle: {r: 0.9411765, g: 0.4392157, b: 0.16470589, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.30980393, g: 0.65882355, b: 0.2509804, a: 1}
+      pickTo: {r: 0.35686275, g: 0.22745098, b: 0.61960787, a: 1}
+      pickWidth: 0.1
+      stripes: 0
+      obstacle: {r: 0.9411765, g: 0.3529412, b: 0.54901963, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0.30980393, g: 0.65882355, b: 0.2509804, a: 1}
+      pickTo: {r: 0.3372549, g: 0.3764706, b: 0.47843137, a: 1}
+      pickWidth: 0.1
+      stripes: 0.22
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Voxel
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.9098039, g: 0.21176471, b: 0.11764706, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.48235294, g: 0.24705882, b: 0.76862746, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.12156863, g: 0.47843137, b: 0.3529412, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.24
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Pencil
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.16470589, g: 0.16470589, b: 0.16470589, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.18
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: Space
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8980392, g: 0.1882353, b: 0.2901961, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8156863, g: 0.23529412, b: 0.6901961, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.9411765, g: 0.3764706, b: 0.16470589, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.2
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  - name: SpiceRoute
+    stages:
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8509804, g: 0.078431375, b: 0.18039216, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.49411765, g: 0.12156863, b: 0.65882355, a: 1}
+    - face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0
+      obstacle: {r: 0.8784314, g: 0.26666668, b: 0.101960786, a: 1}
+    obstacleRunway:
+      face: {r: 0, g: 0, b: 0, a: 0}
+      pickFrom: {r: 0, g: 0, b: 0, a: 0}
+      pickTo: {r: 0, g: 0, b: 0, a: 0}
+      pickWidth: 0.08
+      stripes: 0.2
+      obstacle: {r: 0.9, g: 0.28, b: 0.3, a: 1}
+  stageAt: {x: 0.33333334, y: 0.6666667}
+  thresholdLine: 0.7

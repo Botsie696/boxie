@@ -1,0 +1,9 @@
+D to 45 | D_Rail | score 45 t 53.6 | 53.6 s game
+  cam speed p1/50/99 5.7/10.4/15.2 | <3u/s 0.0% | accel p50/95/99 7.6/14.1/27.4 | dips/10s 0.37
+  runner offset p95/max 35/54% | outside safe box 0.93% | C1 97.8% C2 84.5% | gaze 89.7% | thumb 0.00%
+  yaw rate max 64.3 ambient max 0.0 deg/s | rotations 1 min s/90 2.05 | flow p95/max 23/44 over 0.0% | emergencies/min 0.00 (0)
+E to 45 | E_ZoneDrift | score 45 t 53.2 | 53.2 s game
+  cam speed p1/50/99 5.1/10.7/21.2 | <3u/s 0.0% | accel p50/95/99 9.5/40.8/59.4 | dips/10s 1.31
+  runner offset p95/max 36/51% | outside safe box 0.75% | C1 96.2% C2 77.9% | gaze 83.3% | thumb 0.09%
+  yaw rate max 61.6 ambient max 1.7 deg/s | rotations 2 min s/90 2.14 | flow p95/max 32/61 over 0.3% | emergencies/min 3.38 (3) | shots/min 16.9 min gap 3.00
+BATCH DONE

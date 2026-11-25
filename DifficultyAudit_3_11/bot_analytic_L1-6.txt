@@ -1,0 +1,12 @@
+Average L1 legs=42 clear=88% deaths=30 medDeathLeg=27 last20=17 last30=23 byPhase[Peak:5 Build:18 Release:1 Cooldown:6 ] causes[corner:30 ] rescues/100legs=0.1 nearLate=0
+Average L2 legs=60 clear=63% deaths=89 medDeathLeg=23 last20=21 last30=33 byPhase[Build:49 Cooldown:22 Peak:7 Release:11 ] causes[boost:9 corner:80 ] rescues/100legs=0.1 nearLate=3
+Average L3 legs=95 clear=7% deaths=224 medDeathLeg=49 last20=1 last30=71 byPhase[Cooldown:134 Build:88 Peak:1 Release:1 ] causes[boost:7 corner:217 ] rescues/100legs=0.2 nearLate=7
+Average L4 legs=75 clear=32% deaths=164 medDeathLeg=14 last20=16 last30=22 byPhase[Cooldown:23 Build:140 Peak:1 ] causes[boost:9 corner:154 decoy:1 ] rescues/100legs=0.2 nearLate=7
+Average L5 legs=70 clear=28% deaths=173 medDeathLeg=35 last20=11 last30=81 byPhase[Build:84 Cooldown:80 Peak:3 Release:6 ] causes[corner:158 boost:15 ] rescues/100legs=0.1 nearLate=10
+Average L6 legs=75 clear=28% deaths=174 medDeathLeg=15 last20=11 last30=19 byPhase[Peak:8 Build:115 Cooldown:47 Release:4 ] causes[corner:164 boost:10 ] rescues/100legs=0.2 nearLate=10
+Skilled L1 legs=42 clear=99% deaths=3 medDeathLeg=44 last20=3 last30=3 byPhase[Cooldown:3 ] causes[corner:3 ] rescues/100legs=0.0 nearLate=2
+Skilled L2 legs=60 clear=94% deaths=15 medDeathLeg=32 last20=2 last30=10 byPhase[Build:11 Cooldown:2 Peak:2 ] causes[corner:13 boost:2 ] rescues/100legs=0.2 nearLate=3
+Skilled L3 legs=95 clear=8% deaths=221 medDeathLeg=56 last20=3 last30=79 byPhase[Cooldown:139 Build:82 ] causes[corner:218 boost:3 ] rescues/100legs=0.9 nearLate=44
+Skilled L4 legs=75 clear=48% deaths=125 medDeathLeg=15 last20=1 last30=3 byPhase[Cooldown:3 Build:122 ] causes[boost:7 corner:118 ] rescues/100legs=1.1 nearLate=34
+Skilled L5 legs=70 clear=35% deaths=155 medDeathLeg=37 last20=2 last30=74 byPhase[Build:78 Cooldown:73 Peak:4 ] causes[corner:147 boost:8 ] rescues/100legs=0.8 nearLate=25
+Skilled L6 legs=75 clear=46% deaths=129 medDeathLeg=13 last20=1 last30=19 byPhase[Build:102 Cooldown:24 Peak:3 ] causes[corner:122 boost:7 ] rescues/100legs=0.7 nearLate=18

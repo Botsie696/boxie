@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_soul_nori
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: soul_nori
+  displayName: Nori
+  tagline: Five more minutes... then runs.
+  rarity: 2
+  price: 2400
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: 48ef119a636332249af8d94c223562cb, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 0.62, g: 0.68, b: 1, a: 1}
+  characterPrefab: {fileID: 8547180536463603780, guid: 0e00f9c5832d49a408d68f85d38f5e36, type: 3}
+  overrideTrail: 1
+  trailHead: {r: 0.78, g: 0.8, b: 1, a: 1}
+  trailMid: {r: 0.55, g: 0.6, b: 0.95, a: 1}
+  trailTail: {r: 0.55, g: 0.6, b: 0.95, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 0}
+  landingSquash: 0
+  deathBurstPrefab: {fileID: 0}

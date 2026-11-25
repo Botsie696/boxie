@@ -1,0 +1,640 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0c0f10a20ca716f44800a8ec6a3a63ec, type: 3}
+  m_Name: Scene3_11_CheckpointDifficulty
+  m_EditorClassIdentifier: Assembly-CSharp::Scene311DifficultyProfile
+  timeBudgetLegs: 1
+  useProfileSpeedCurve: 1
+  fairInput: 1
+  fairCorners: 1
+  wavePacing: 1
+  cameraOverrides: 1
+  feedbackFX: 1
+  telemetry: 0
+  validateFloors: 1
+  vStart: 11.9
+  vCap: 33
+  tau: 70
+  holdLegs: 6
+  speedEaseSeconds: 0.3
+  steppedSpeed: 0
+  durOnboarding: {x: 1, y: 1.3}
+  durRamp: {x: 0.8, y: 1.1}
+  durMastery: {x: 0.68, y: 0.95}
+  durFloor: {x: 0.62, y: 0.9}
+  firstLegSeconds: 1.8
+  tHuman1: {x: 0.75, y: 0.5, z: 0.38, w: 0.36}
+  tHuman2: {x: 0.85, y: 0.58, z: 0.45, w: 0.42}
+  tHuman0: 0.35
+  phaseLegs: {x: 15, y: 60, z: 150}
+  boostWindowScale: 0.9
+  boostMin2Tap: 0.4
+  boostMin1Tap: 0.34
+  rollTime: 0.1
+  rollCooldown: 0.08
+  landingLock: 0.03
+  cornerDeadline: 0.03
+  cornerCommitOffset: -0.05
+  fireOnTouchDown: 1
+  swipePixels: 45
+  multiTouch: 1
+  preCornerBuffer: 0.15
+  doubleTapFlip: 1
+  doubleTapWindow: 0.22
+  swipeFlip: 1
+  disableFlipRemap: 1
+  rescueWindow: 0.09
+  rescueMaxCubes: 3.5
+  rescueRollTime: 0.06
+  rescueBonusPoints: 1
+  earlyTurnBonusCubes: 3.5
+  rescueHitStop: 1
+  hitStopSeconds: 0.035
+  hitStopTimeScale: 0.4
+  rescuePlanks: 1
+  plankGapAdjacent: 0.3
+  plankGapOpposite: 0.45
+  bridgeMaxTierMultiple: 2.5
+  portalRunwaySeconds: 1.2
+  releaseEnd: 5
+  buildEnd: 20
+  peakEnd: 27
+  onboardingBoost: {x: 14, y: 5}
+  peakBoostLegs: 7
+  secondBoostFromCycle: 3
+  buildBoostStart: 9
+  buildBoostLegs: 5
+  clusterBridgeLegs: 150000001700000019000000
+  firstHazardLeg: 9
+  glideLegs: 0b00000011000000
+  glideLengthScale: 1.3
+  buildAvg: 1.8
+  avgGrowth: 0.08
+  avgCap: 3.2
+  peakBudget: 3.4
+  peakGrowth: 1.12
+  peakCap: 4.5
+  legCostCap: {x: 5, y: 6, z: 7}
+  hardLegCost: 5
+  nextLegCostAfterHard: 2
+  costObstacle: 2
+  costDecoy: 2
+  costBridge: 3
+  costExtraPlank: 2
+  costOppositePlank: 1
+  costCameraRotation: 3
+  costBoostLeg: 3
+  lureMaxCost: 4
+  featuredBoost: 1.75
+  nonFeaturedScale: 0.6
+  patternFamiliesFromCycle: 5
+  slowMoFromLevel: 3
+  slowMoLegs: {x: 5, y: 7}
+  slowMoLegsPerLevel: {x: 2, y: 4}
+  slowMoLegCap: 24
+  slowMoLegCubes: {x: 5, y: 7}
+  slowMoTimeScale: {x: 0.7, y: 0.85}
+  slowMoLegSecondsScale: 1
+  slowMoSpeedBoost: 1
+  boostsPerLevel: {x: 1, y: 2}
+  boostExtraChance: 0.3
+  boostLegsFirst: {x: 5, y: 6}
+  longBoostChance: 0.3
+  longBoostScale: 1.5
+  boostLegCap: 20
+  specialGrowth: 1.2
+  slowMoCountChances: {x: 0.2, y: 0.5, z: 0.3}
+  speedZoomMax: 1.15
+  boostZoom: 1.15
+  boostZoomIn: 0.5
+  boostZoomOut: 0.4
+  restrictCameraRotation: 1
+  runnerRimMaterial: {fileID: 2100000, guid: f649a76f98e0dba4c80a625fcafb0d97, type: 2}
+  runnerRimScale: 1.14
+  showRealDeadline: 1
+  portalLegs: 2d00000069000000af000000fa0000004a0100008b010000e00100003a0200009e020000
+  portalLegsRepeat: 60
+  levels:
+  - name: Start
+    intent: 'Learn to read. No specials. Finale: the first 2-roll pairs.'
+    length: 45
+    speedStart: 17
+    speedEnd: 23
+    speedHoldLegs: 3
+    speedCurve: 1.4
+    blendLegs: 0
+    durStart: {x: 1, y: 1.3}
+    durEnd: {x: 0.85, y: 1.15}
+    tHuman1: {x: 0.72, y: 0.55}
+    tHuman2: {x: 0.79, y: 0.62}
+    buildAvg: 1.6
+    peakBudget: 3.2
+    legCostCap: 5
+    shape:
+      releaseEnd: 3
+      buildEnd: 42
+      peakEnd: 43
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Crimson
+    intent: 'Rhythm. One classic boost, one runway. Finale: a staircase of short
+      alternating legs.'
+    length: 60
+    speedStart: 20
+    speedEnd: 24.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.74, y: 0.98}
+    durEnd: {x: 0.72, y: 0.96}
+    tHuman1: {x: 0.52, y: 0.46}
+    tHuman2: {x: 0.59, y: 0.53000003}
+    buildAvg: 2.3
+    peakBudget: 3.9
+    legCostCap: 5
+    shape:
+      releaseEnd: 3
+      buildEnd: 57
+      peakEnd: 58
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.3
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Toon
+    intent: 'Speed. Long boosts unlocked. Finale: a long boost straight into a 2-roll
+      exit.'
+    length: 70
+    speedStart: 23
+    speedEnd: 27.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 1.05, y: 1.4}
+    durEnd: {x: 1, y: 1.3}
+    tHuman1: {x: 0.5, y: 0.45}
+    tHuman2: {x: 0.57, y: 0.52}
+    buildAvg: 1.8
+    peakBudget: 3.4
+    legCostCap: 5
+    shape:
+      releaseEnd: 3
+      buildEnd: 67
+      peakEnd: 68
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.1
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Pixel
+    intent: 'Reading forks. Finale: decoy gauntlet, every decoy followed by a 2-roll.'
+    length: 75
+    speedStart: 23
+    speedEnd: 25.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.95, y: 1.25}
+    durEnd: {x: 0.9, y: 1.2}
+    tHuman1: {x: 0.47, y: 0.42}
+    tHuman2: {x: 0.54, y: 0.48999998}
+    buildAvg: 2.8
+    peakBudget: 4.1
+    legCostCap: 6
+    shape:
+      releaseEnd: 3
+      buildEnd: 72
+      peakEnd: 73
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.55
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Storybook
+    intent: 'First exam. Broken-rhythm boosts. Finale: runway (Fence + Drifter) ->
+      slow motion -> short-leg burst.'
+    length: 80
+    speedStart: 23.5
+    speedEnd: 27
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.72, y: 0.98}
+    durEnd: {x: 0.68, y: 0.94}
+    tHuman1: {x: 0.45, y: 0.41}
+    tHuman2: {x: 0.52, y: 0.48}
+    buildAvg: 2.7
+    peakBudget: 4.3
+    legCostCap: 6
+    shape:
+      releaseEnd: 3
+      buildEnd: 77
+      peakEnd: 78
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.3
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Blossom
+    intent: Breather level. Coins x2, a guaranteed power-up, Twin sliders introduced,
+      mild finale.
+    length: 65
+    speedStart: 24
+    speedEnd: 26.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.85, y: 1.15}
+    durEnd: {x: 0.82, y: 1.1}
+    tHuman1: {x: 0.47, y: 0.43}
+    tHuman2: {x: 0.54, y: 0.5}
+    buildAvg: 1.7
+    peakBudget: 3.2
+    legCostCap: 5
+    shape:
+      releaseEnd: 3
+      buildEnd: 62
+      peakEnd: 63
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.1
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 2
+    powerUpFromLeg: 10
+  - name: Brick Meadow
+    intent: 'Boost exits unlocked. Finale: CornerSlider runway into a short-leg burst.'
+    length: 85
+    speedStart: 24.5
+    speedEnd: 28
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.85, y: 1.15}
+    durEnd: {x: 0.8, y: 1.1}
+    tHuman1: {x: 0.44, y: 0.4}
+    tHuman2: {x: 0.51, y: 0.47}
+    buildAvg: 2.8
+    peakBudget: 4.3
+    legCostCap: 6
+    shape:
+      releaseEnd: 3
+      buildEnd: 82
+      peakEnd: 83
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.2
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Sketchbook
+    intent: 'Finale: a long boost (x1.5) into decoys.'
+    length: 90
+    speedStart: 25.5
+    speedEnd: 29.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 1.05, y: 1.4}
+    durEnd: {x: 1, y: 1.3}
+    tHuman1: {x: 0.44, y: 0.4}
+    tHuman2: {x: 0.51, y: 0.47}
+    buildAvg: 2.2
+    peakBudget: 3.8
+    legCostCap: 5
+    shape:
+      releaseEnd: 3
+      buildEnd: 87
+      peakEnd: 88
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.2
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  - name: Rogue Planet
+    intent: 'Final exam. Finale: 30 legs mixing every hazard, one double spike.'
+    length: 100
+    speedStart: 26
+    speedEnd: 29.5
+    speedHoldLegs: 0
+    speedCurve: 1.4
+    blendLegs: 5
+    durStart: {x: 0.72, y: 0.98}
+    durEnd: {x: 0.68, y: 0.94}
+    tHuman1: {x: 0.43, y: 0.4}
+    tHuman2: {x: 0.5, y: 0.47}
+    buildAvg: 3
+    peakBudget: 4.6
+    legCostCap: 6
+    shape:
+      releaseEnd: 3
+      buildEnd: 97
+      peakEnd: 98
+      firstHazardLeg: 4
+      onboardingBoost: {x: 0, y: 0}
+      peakKind: 3
+      peakBoostLegs: 0
+      buildBoosts: []
+      clusterBridgeLegs: 
+      glideLegs: 
+      glideLengthScale: 1.35
+      featured: 5
+      families: 0
+    decoyChance: 0.4
+    forcedFamily: -1
+    runwayLegs: 
+    coinScale: 1
+    powerUpFromLeg: -1
+  endlessIdentity: 01000000020000000300000004000000060000000700000008000000
+  endlessSpeedStart: 26.5
+  endlessSpeedEnd: 30.5
+  endlessSpeedPerCycle: 0.3
+  speedCeiling: 31
+  endlessBudgetPerCycle: 0.1
+  endlessPeakCap: 4.8
+  endlessGlideEvery: 11
+  globalFloor1: 0.4
+  globalFloor2: 0.47
+  teachOpeningDecoy: 0
+  adaptiveEasing: 0
+  levels311:
+  - waves: 2
+    finaleLegs: 20
+    signature: 1
+    rescueWindow: 0.09
+    rescueReachCubes: 3.5
+    boosts: 0
+    newestBoostMode: -1
+    runways: 0
+    stations: {x: 5, y: 5}
+    designWeights: 00000000000000000000000000000000000000000000000000000000
+    gapFactor: 1.2
+    gapJitter: 0.25
+    sliderSpeed: {x: 0, y: 0}
+    maxSliders: 0
+    finaleDesigns: 
+    slowMos: 0
+    powerFrequency: 1
+  - waves: 2
+    finaleLegs: 20
+    signature: 2
+    rescueWindow: 0.08
+    rescueReachCubes: 3
+    boosts: 1
+    newestBoostMode: 0
+    runways: 1
+    stations: {x: 5, y: 5}
+    designWeights: 06000000040000000000000000000000000000000000000000000000
+    gapFactor: 1.2
+    gapJitter: 0.25
+    sliderSpeed: {x: 0, y: 0}
+    maxSliders: 0
+    finaleDesigns: 
+    slowMos: 0
+    powerFrequency: 1
+  - waves: 2
+    finaleLegs: 20
+    signature: 3
+    rescueWindow: 0.07
+    rescueReachCubes: 3
+    boosts: 1
+    newestBoostMode: 1
+    runways: 1
+    stations: {x: 6, y: 6}
+    designWeights: 03000000040000000000000003000000000000000000000000000000
+    gapFactor: 1.15
+    gapJitter: 0.25
+    sliderSpeed: {x: 0, y: 0}
+    maxSliders: 0
+    finaleDesigns: 
+    slowMos: 1
+    powerFrequency: 1
+  - waves: 3
+    finaleLegs: 25
+    signature: 4
+    rescueWindow: 0.06
+    rescueReachCubes: 2.5
+    boosts: 1
+    newestBoostMode: 1
+    runways: 2
+    stations: {x: 6, y: 6}
+    designWeights: 02000000030000000400000002000000010000000000000000000000
+    gapFactor: 1.15
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.22, y: 0.32}
+    maxSliders: 1
+    finaleDesigns: 
+    slowMos: 1
+    powerFrequency: 0.7
+  - waves: 3
+    finaleLegs: 28
+    signature: 5
+    rescueWindow: 0.05
+    rescueReachCubes: 2
+    boosts: 2
+    newestBoostMode: 2
+    runways: 1
+    stations: {x: 7, y: 7}
+    designWeights: 00000000010000000300000004000000020000000000000000000000
+    gapFactor: 1.1
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.25, y: 0.35}
+    maxSliders: 99
+    finaleDesigns: 0300000004000000
+    slowMos: 0
+    powerFrequency: 0.7
+  - waves: 3
+    finaleLegs: 25
+    signature: 0
+    rescueWindow: 0.06
+    rescueReachCubes: 2.5
+    boosts: 2
+    newestBoostMode: 2
+    runways: 1
+    stations: {x: 6, y: 6}
+    designWeights: 00000000020000000300000002000000010000000300000000000000
+    gapFactor: 1.15
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.25, y: 0.32}
+    maxSliders: 99
+    finaleDesigns: 
+    slowMos: 1
+    powerFrequency: 0.7
+  - waves: 3
+    finaleLegs: 28
+    signature: 7
+    rescueWindow: 0.04
+    rescueReachCubes: 1.5
+    boosts: 2
+    newestBoostMode: 3
+    runways: 2
+    stations: {x: 7, y: 7}
+    designWeights: 00000000020000000300000002000000010000000200000003000000
+    gapFactor: 1.1
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.3, y: 0.42}
+    maxSliders: 99
+    finaleDesigns: 06000000
+    slowMos: 1
+    powerFrequency: 0.5
+  - waves: 3
+    finaleLegs: 30
+    signature: 8
+    rescueWindow: 0.04
+    rescueReachCubes: 1.5
+    boosts: 2
+    newestBoostMode: 3
+    runways: 2
+    stations: {x: 8, y: 8}
+    designWeights: 01000000020000000300000002000000020000000200000003000000
+    gapFactor: 1.05
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.3, y: 0.42}
+    maxSliders: 99
+    finaleDesigns: 
+    slowMos: 1
+    powerFrequency: 0.5
+  - waves: 3
+    finaleLegs: 30
+    signature: 9
+    rescueWindow: 0.03
+    rescueReachCubes: 1.5
+    boosts: 3
+    newestBoostMode: 3
+    runways: 2
+    stations: {x: 8, y: 9}
+    designWeights: 01000000020000000300000002000000020000000200000003000000
+    gapFactor: 1.05
+    gapJitter: 0.25
+    sliderSpeed: {x: 0.3, y: 0.45}
+    maxSliders: 99
+    finaleDesigns: 
+    slowMos: 0
+    powerFrequency: 0.5
+  releaseLegs: 3
+  exhaleLegs: 2
+  glideEvery: 11
+  wavePeakStep: 0.2
+  finalePeakAdd: 0.3
+  peakShare: 0.35
+  burstDurScale: 0.75
+  burstLegs: 6
+  staircaseDurScale: 0.85
+  decoyFinaleScale: 2.5
+  costAfterCap: {x: 3, y: 4}
+  costAfterCapFromLevel: 7
+  boostLegsL2: {x: 5, y: 6}
+  boostGrowth: 1.15
+  boostLegCap311: 14
+  longBoost311: 1.5
+  newestModeShare: 0.4
+  brokenExtraCubes: 3
+  exitLegFloorScale: 1.1
+  boostGap: 6
+  specialGap: 4
+  runwayGap: 8
+  finaleSlowMoCap: 14
+  freefallTHuman1: {x: 0.42, y: 0.4}
+  freefallTHumanPerCycle: -0.005
+  freefallRescue: 0.03
+  freefallRescueReach: 1.5
+  freefallWaves: 3
+  freefallFinale: 20
+  freefallBoosts: 2
+  freefallRunways: 2
+  freefallSlowMos: 1
+  freefallStationEvery: 2
+  twoRollAdd: 0.07
+  absoluteFloor1: 0.38
+  absoluteFloor2: 0.45
+  weakTwoRollAdd: 0.05
+  devTelemetry: 1

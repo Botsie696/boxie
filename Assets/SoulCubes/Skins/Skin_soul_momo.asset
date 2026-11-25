@@ -1,0 +1,32 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_soul_momo
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: soul_momo
+  displayName: Momo
+  tagline: Purrs at every corner.
+  rarity: 2
+  price: 1800
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: efae3f565cdd57b4aa85bd2d49417d75, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 1, g: 0.62, b: 0.7, a: 1}
+  characterPrefab: {fileID: 1697158112638338775, guid: 2cccb1e4c9ef3b74c87a75a0a3e4b202, type: 3}
+  overrideTrail: 1
+  trailHead: {r: 1, g: 0.75, b: 0.8, a: 1}
+  trailMid: {r: 0.95, g: 0.5, b: 0.62, a: 1}
+  trailTail: {r: 0.95, g: 0.5, b: 0.62, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 0}
+  landingSquash: 0
+  deathBurstPrefab: {fileID: 0}

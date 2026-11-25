@@ -1,0 +1,47 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!21 &2100000
+Material:
+  serializedVersion: 8
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Name: M_PC1_Sky
+  m_Shader: {fileID: 4800000, guid: 85ae2214c2a60494e8e5e7017a930840, type: 3}
+  m_Parent: {fileID: 0}
+  m_ModifiedSerializedProperties: 0
+  m_ValidKeywords: []
+  m_InvalidKeywords: []
+  m_LightmapFlags: 4
+  m_EnableInstancingVariants: 0
+  m_DoubleSidedGI: 0
+  m_CustomRenderQueue: -1
+  stringTagMap: {}
+  disabledShaderPasses: []
+  m_LockedProperties: 
+  m_SavedProperties:
+    serializedVersion: 3
+    m_TexEnvs: []
+    m_Ints: []
+    m_Floats:
+    - _Aspect: 0.5625
+    - _GlowFalloff: 1.2
+    - _GlowRadius: 0.9
+    - _GlowStrength: 0.8
+    - _Grain: 0.02
+    - _HazeHeight: 0
+    - _HazeStrength: 0
+    - _RingCount: 9
+    - _Rings: 0
+    - _Vignette: 0.35
+    m_Colors:
+    - _BottomColor: {r: 0.23137255, g: 0.15294118, b: 0.32156864, a: 1}
+    - _GlowCenter: {r: 0.6, g: 0.22, b: 0, a: 0}
+    - _GlowColor: {r: 0.3529412, g: 0.16470589, b: 0.36862746, a: 1}
+    - _MidColor: {r: 0.22745098, g: 0.19607843, b: 0.34901962, a: 1}
+    - _StarColor: {r: 1, g: 0.8392157, b: 0.89411765, a: 1}
+    - _TopColor: {r: 0.13725491, g: 0.10980392, b: 0.24705882, a: 1}
+    - _VignetteColor: {r: 0.14117648, g: 0.11764706, b: 0.23921569, a: 1}
+  m_BuildTextureStacks: []
+  m_AllowLocking: 1

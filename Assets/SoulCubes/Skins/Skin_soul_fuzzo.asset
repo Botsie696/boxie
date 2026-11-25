@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_soul_fuzzo
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: soul_fuzzo
+  displayName: Fuzzo
+  tagline: Bites nothing. Hugs everything.
+  rarity: 1
+  price: 1100
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: 9af45c34920c0bc49beae105834a4b08, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 1, g: 0.55, b: 0.3, a: 1}
+  characterPrefab: {fileID: 979108394243892497, guid: d2a6f5f270f32b546ae0407fe4d99b7b, type: 3}
+  sceneCharacter: 0
+  overrideTrail: 1
+  trailHead: {r: 1, g: 0.7, b: 0.4, a: 1}
+  trailMid: {r: 0.95, g: 0.45, b: 0.25, a: 1}
+  trailTail: {r: 0.95, g: 0.45, b: 0.25, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 0}
+  landingSquash: 0
+  deathBurstPrefab: {fileID: 0}

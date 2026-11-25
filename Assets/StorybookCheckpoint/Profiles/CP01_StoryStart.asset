@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58f2fde22739d64396e78b0d00fc505, type: 3}
+  m_Name: CP01_StoryStart
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointProfile
+  index: 1
+  displayName: Storybook Keep
+  legIndex: 0
+  look: {fileID: 11400000, guid: c7ff83a7a133d6445bef8ef5a6d15e8a, type: 2}
+  applySunRotation: 0
+  skyboxMaterial: {fileID: 0}
+  fog:
+    enabled: 0
+    mode: 2
+    color: {r: 0.17254902, g: 0.16470589, b: 0.14117648, a: 1}
+    density: 0.01
+    start: 0
+    end: 0
+  ambientParticlePrefab: {fileID: 5173108923555508926, guid: 8fe50ed5913d7ae44bcb311b9c8f91e5, type: 3}
+  label: 
+  cameraCinematic: 1
+  keepObstacle: 1
+  takePlankColor: 1
+  overrideTiming: 0
+  timing:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0
+  menuCamera:
+    motion: 0
+    positionOffset: {x: 0, y: 13, z: -15}
+    angles: {x: 40, y: 45}
+    fov: 42
+    motionSpeed: 0.025
+    motionAmplitude: 35
+  lockedTeaseColor: {r: 1, g: 0.8235294, b: 0.47843137, a: 1}

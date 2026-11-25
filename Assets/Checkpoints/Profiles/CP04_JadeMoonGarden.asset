@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58f2fde22739d64396e78b0d00fc505, type: 3}
+  m_Name: CP04_JadeMoonGarden
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointProfile
+  index: 4
+  displayName: Jade Moon Garden
+  legIndex: 150
+  look: {fileID: 11400000, guid: 7d5fdb6b830893d4f93437ebbeac70be, type: 2}
+  applySunRotation: 0
+  skyboxMaterial: {fileID: 0}
+  fog:
+    enabled: 0
+    mode: 2
+    color: {r: 0.039215688, g: 0.24705882, b: 0.18431373, a: 1}
+    density: 0.01
+    start: 0
+    end: 0
+  ambientParticlePrefab: {fileID: 86876768993062917, guid: 74c9e0fa2ded77745aa93d6a6e1829b3, type: 3}
+  label: 
+  cameraCinematic: 1
+  keepObstacle: 0
+  takePlankColor: 1
+  overrideTiming: 0
+  timing:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0
+  menuCamera:
+    motion: 3
+    positionOffset: {x: 0, y: 20, z: -48}
+    angles: {x: 22, y: 35}
+    fov: 15
+    motionSpeed: 0.03
+    motionAmplitude: 10
+  lockedTeaseColor: {r: 0.8117647, g: 1, b: 0.9137255, a: 1}

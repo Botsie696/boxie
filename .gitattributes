@@ -1,0 +1,12 @@
+﻿Assets/Antro3d/Fran/_URP[[:space:]]&[[:space:]]HDRP[[:space:]]Pack/FranHDRP.unitypackage filter=lfs diff=lfs merge=lfs -text
+Assets/Antro3d/Fran/_URP[[:space:]]&[[:space:]]HDRP[[:space:]]Pack/FranURP.unitypackage filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/Stylized[[:space:]]Architecture[[:space:]]Set.fbx filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/1751e60aaaf63b05f8bc35cf46b5f1bc.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/23be0b74f4996a00bafda4b4de85f439.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/4786a5cc80fb258b98c0d470d03c7378.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/56ffd01ddf328ff664d4adc7c8617784.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/791a176a003568ade1d78a1fd4534ff4.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/82caa79f32b97ff9ada9a137c5b68753.glb filter=lfs diff=lfs merge=lfs -text
+Assets/BackgroundAssets/pillars/a36b481886954e7894e7c151d480b3cb.glb filter=lfs diff=lfs merge=lfs -text
+Assets/ClothDynamics/Scenes/Examples.unitypackage filter=lfs diff=lfs merge=lfs -text
+Assets/POLYBOX/Polyquest_Worlds_Full_Pack_Vol.1/_URP_package/polyquest_full_pack_vol.1_URP.zip filter=lfs diff=lfs merge=lfs -text

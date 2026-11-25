@@ -1,0 +1,29 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89b53d56d2ba7b14aacd9ce01e6a6304, type: 3}
+  m_Name: CornerProps_Pillars
+  m_EditorClassIdentifier: Assembly-CSharp::CornerPropSet
+  props:
+  - {fileID: 5500715701576348887, guid: 79cc6d305120bdb49984ea0c0db00c20, type: 3}
+  - {fileID: 5723771214859039807, guid: e7144cd57b95e164b87734319576be66, type: 3}
+  - {fileID: 1699625345682251105, guid: 2cb413a6d72f01e4ea32ee252679ee36, type: 3}
+  - {fileID: 6762157874827725407, guid: 94a33c92a3392364d99cdbe1368de280, type: 3}
+  - {fileID: 5623141697481961830, guid: 0237eed1b27f0e54fa2ce533e3c44930, type: 3}
+  - {fileID: 5067991797279636401, guid: 768b4146c7eff5c4e9308d7d80aac593, type: 3}
+  - {fileID: 4822697027168949465, guid: 250b5b10b93b5fd428257516423388db, type: 3}
+  legsPerProp: 5
+  specialProps:
+  - {fileID: 1210799509119933741, guid: 849863fb160854f47833741a733ca5e7, type: 3}
+  specialEveryMin: 18
+  specialEveryMax: 22
+  specialHeight: 9
+  specialMaxWidth: 6

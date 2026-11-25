@@ -1,0 +1,17 @@
+fileFormatVersion: 2
+guid: d32ad9d4c31dc4141a19d15c8f75497e
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 625f186215c104763be7675aa2d941aa, type: 3}
+AssetOrigin:
+  serializedVersion: 1
+  productId: 345520
+  packageName: Handpainted Shader and Textures - MEGA PACK vol 2
+  packageVersion: 1.0
+  assetPath: Assets/Adrift Team/HandPainted MEGA PACK vol2/HandPainted Marker/Shaders/HandPainted_WorldAligned_AT.shadergraph
+  uploadId: 820912

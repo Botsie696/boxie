@@ -1,0 +1,31 @@
+BOXICLE GAME - TrialScene2 high-level overview
+(Based on project notes, not a fresh read of the scene.)
+
+WHAT IT IS
+An endless cube-rail runner. Portrait, orthographic isometric, Monument Valley look.
+A runner moves along a procedurally generated path of cubes (DynamicPathGenerator).
+The path ahead is built as you go. Background is a rock chasm with fog and houses.
+
+HOW TO PLAY
+- The runner moves forward on its own along the cube path.
+- Each leg is about 14-20 cubes long, then the path turns sideways.
+- To take a turn, the runner has to be on the face of the path that points toward the turn.
+- The path and camera (CameraParentRotator) follow the runner, so the run continues as long as you keep making the turns.
+- A trail follows the runner and bursts on gameplay events (RunnerTrailFX, scene 2 only).
+
+COIN COLLECTION
+- Coins are gold coin models placed on the path.
+- When the next leg is laid in direction d, the current leg can get a run of coins on the face toward d.
+  That is the same face the runner needs to be on to take the turn, so following the coins sets you up for the turn.
+- Placement rules:
+  - 50% chance per leg
+  - a coin on every 2nd cube
+  - 4-cube margins at each end
+  - cap of 8-15 coins per run
+- Pickup and score: CoinCollector on the runner. Top-right HUD (CoinCounterUI) shows the count.
+- Coins have no colliders (a collider would be mistaken for a path cube by the runner's forward probe), so pickup is by proximity.
+- The Tune panel (PathVisualTuner) has sliders for the coin values.
+
+KNOWN QUIRKS (pre-existing)
+- Runner renders magenta in URP (Standard material).
+- AutoPlayer logs a few "ROUTE POSITION JUMP" messages per run.

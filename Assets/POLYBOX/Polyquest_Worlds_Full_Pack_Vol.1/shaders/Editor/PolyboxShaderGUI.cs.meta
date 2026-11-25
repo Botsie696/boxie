@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: bc88b8f0229e44dc0be28ee9e1296d08
+timeCreated: 1486250366
+licenseType: Store
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences: []
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 74631
+  packageName: Polyquest Worlds Full Pack Vol.1
+  packageVersion: 13.0
+  assetPath: Assets/POLYBOX/Polyquest_Worlds_Full_Pack_Vol.1/shaders/Editor/PolyboxShaderGUI.cs
+  uploadId: 778691

@@ -1,0 +1,52 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e58f2fde22739d64396e78b0d00fc505, type: 3}
+  m_Name: CP08_PixelPlaceholder
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointProfile
+  index: 8
+  displayName: Checkpoint 8
+  legIndex: 350
+  look: {fileID: 0}
+  applySunRotation: 0
+  skyboxMaterial: {fileID: 0}
+  fog:
+    enabled: 0
+    mode: 0
+    color: {r: 0, g: 0, b: 0, a: 0}
+    density: 0
+    start: 0
+    end: 0
+  ambientParticlePrefab: {fileID: 0}
+  label: 
+  cameraCinematic: 1
+  keepObstacle: 1
+  takePlankColor: 1
+  overrideTiming: 0
+  timing:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0
+  menuCamera:
+    motion: 0
+    positionOffset: {x: 0, y: 0, z: 0}
+    angles: {x: 0, y: 0}
+    fov: 0
+    motionSpeed: 0
+    motionAmplitude: 0
+  lockedTeaseColor: {r: 1, g: 0.85, b: 0.4, a: 1}

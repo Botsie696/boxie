@@ -1,0 +1,37 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468cce1410768514daa480c3ab673fd4, type: 3}
+  m_Name: CheckpointSet_Toon
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointSet
+  checkpoints:
+  - {fileID: 11400000, guid: 7bc2e829115aee040b9c830a1de2e3bb, type: 2}
+  - {fileID: 11400000, guid: 58775320598278943a8259ee7ca70eef, type: 2}
+  - {fileID: 11400000, guid: cd80a668d2867e74b8af869891338e29, type: 2}
+  - {fileID: 11400000, guid: e79a2ca0f6523fe4c84fad78105f72e8, type: 2}
+  - {fileID: 11400000, guid: 658cac7d4c742b04684fe6f3ba8b0499, type: 2}
+  - {fileID: 11400000, guid: 5b844135bfd00c44ab9e7e8d18346e74, type: 2}
+  - {fileID: 11400000, guid: 07c781b4472ace64dad58db8cf4cf794, type: 2}
+  - {fileID: 11400000, guid: 86905afd6af3daa4f95247d4d2c4c75b, type: 2}
+  - {fileID: 11400000, guid: 16d4153a576906543ba8df4d76fd58d9, type: 2}
+  - {fileID: 11400000, guid: cb446c67c0a0bcc4a8cf29604cb0e587, type: 2}
+  legsBetweenPortals: 50
+  defaultTiming:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0

@@ -1,0 +1,12 @@
+{
+    "asset": "6be55483f1809a044869d1d9ebfc8e6e",
+    "fileName": "019dc1c2-b635-770d-9d0e-72bbc8526fd8.pose.json",
+    "prompt": "Humanoid run animation, strictly running in place, 0 velocity, zero forward movement, stationary runner, fast speed, looping.",
+    "negativePrompt": "",
+    "model": "9e46c009-67d8-4254-a3a0-32e3168247ee",
+    "modelName": "Text to Motion",
+    "customSeed": 77328733,
+    "w3CTraceId": "bb36a49c739cd1ebc9ef192ebf6157c7",
+    "feedback": 0,
+    "isTrimmed": false
+}

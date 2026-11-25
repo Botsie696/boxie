@@ -1,0 +1,417 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5c022824312b2e94c871073ecf50412f, type: 3}
+  m_Name: MetaTuning311
+  m_EditorClassIdentifier: Assembly-CSharp::MetaTuning311
+  dailyCoins: 320000004b0000006400000096000000c8000000fa000000f4010000
+  graceDaysPerWeek: 1
+  missionCoins: 320000006400000096000000
+  freeRerollsPerDay: 1
+  weeklyCoins: 2c010000f401000020030000
+  tierTargetScale:
+  - 0.7
+  - 0.85
+  - 1
+  - 1.15
+  - 1.3
+  clockToleranceMinutes: 5
+  toastSeconds: 2.4
+  notifyHourWindow: {x: 10, y: 21}
+  defaultPlayHour: 18
+  streakRiskHour: 19
+  streakRiskMinStreak: 3
+  reengageDays: 010000000300000007000000
+  softPromptRepeatDays: 7
+  androidChannelId: daily
+  androidChannelName: Daily reward
+  titleDaily: Your daily reward is ready
+  textDaily: 'Day {0} reward: {1} coins is waiting'
+  titleStreak: Keep your {0}-day streak
+  textStreak: 'Day {1} reward: {2} coins is waiting - the streak ends tonight'
+  titleReengage: The path is waiting
+  textReengage: 'Day {0} reward: {1} coins is waiting'
+  softPromptText: Get a reminder when your daily reward is ready?
+  missions:
+  - id: d_runs
+    kind: 5
+    difficulty: 0
+    weekly: 0
+    text: Play {0} runs
+    baseTarget: 3
+    perCheckpoint: 0
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 999999
+  - id: d_coins1
+    kind: 0
+    difficulty: 0
+    weekly: 0
+    text: Collect {0} coins in one run
+    baseTarget: 20
+    perCheckpoint: 0.15
+    minCheckpoint: 1
+    oneRun: 1
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_close1
+    kind: 4
+    difficulty: 0
+    weekly: 0
+    text: Make {0} close calls
+    baseTarget: 3
+    perCheckpoint: 0.1
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_legs1
+    kind: 11
+    difficulty: 0
+    weekly: 0
+    text: Pass {0} legs in one run
+    baseTarget: 25
+    perCheckpoint: 0.12
+    minCheckpoint: 1
+    oneRun: 1
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_twoRoll1
+    kind: 10
+    difficulty: 0
+    weekly: 0
+    text: Take {0} half-turn corners
+    baseTarget: 15
+    perCheckpoint: 0.1
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_boosts
+    kind: 3
+    difficulty: 1
+    weekly: 0
+    text: Finish {0} boosts
+    baseTarget: 2
+    perCheckpoint: 0.1
+    minCheckpoint: 2
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_runway
+    kind: 2
+    difficulty: 1
+    weekly: 0
+    text: Clear {0} obstacle runways with no rescue
+    baseTarget: 1
+    perCheckpoint: 0.05
+    minCheckpoint: 2
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 3
+  - id: d_decoys
+    kind: 9
+    difficulty: 1
+    weekly: 0
+    text: Get past {0} decoy forks
+    baseTarget: 4
+    perCheckpoint: 0.1
+    minCheckpoint: 2
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_coins2
+    kind: 0
+    difficulty: 1
+    weekly: 0
+    text: Collect {0} coins in one run
+    baseTarget: 45
+    perCheckpoint: 0.15
+    minCheckpoint: 1
+    oneRun: 1
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_slowmo
+    kind: 8
+    difficulty: 1
+    weekly: 0
+    text: Get through {0} slow-motion sections
+    baseTarget: 1
+    perCheckpoint: 0.05
+    minCheckpoint: 3
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 3
+  - id: d_portal
+    kind: 1
+    difficulty: 2
+    weekly: 0
+    text: Reach portal {0}
+    baseTarget: 1
+    perCheckpoint: 0.9
+    minCheckpoint: 1
+    oneRun: 1
+    tierScaled: 0
+    maxTarget: 9
+  - id: d_clearStart
+    kind: 6
+    difficulty: 2
+    weekly: 0
+    text: Clear the checkpoint you start from
+    baseTarget: 1
+    perCheckpoint: 0
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 1
+  - id: d_legs2
+    kind: 11
+    difficulty: 2
+    weekly: 0
+    text: Pass {0} legs in one run
+    baseTarget: 60
+    perCheckpoint: 0.12
+    minCheckpoint: 1
+    oneRun: 1
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_close2
+    kind: 4
+    difficulty: 2
+    weekly: 0
+    text: Make {0} close calls
+    baseTarget: 10
+    perCheckpoint: 0.1
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: d_broken
+    kind: 14
+    difficulty: 2
+    weekly: 0
+    text: Finish a broken-rhythm boost with no rescue
+    baseTarget: 1
+    perCheckpoint: 0
+    minCheckpoint: 5
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 1
+  - id: d_slider
+    kind: 15
+    difficulty: 2
+    weekly: 0
+    text: Clear {0} runways with sliding pillars
+    baseTarget: 1
+    perCheckpoint: 0.05
+    minCheckpoint: 4
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 3
+  - id: d_freefall
+    kind: 7
+    difficulty: 2
+    weekly: 0
+    text: Reach {0} in freefall
+    baseTarget: 30
+    perCheckpoint: 0
+    minCheckpoint: 10
+    oneRun: 1
+    tierScaled: 1
+    maxTarget: 999999
+  - id: w_clears
+    kind: 12
+    difficulty: 0
+    weekly: 1
+    text: Clear {0} checkpoints
+    baseTarget: 5
+    perCheckpoint: 0
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 999999
+  - id: w_runs
+    kind: 5
+    difficulty: 0
+    weekly: 1
+    text: Play {0} runs
+    baseTarget: 30
+    perCheckpoint: 0
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 999999
+  - id: w_close
+    kind: 4
+    difficulty: 1
+    weekly: 1
+    text: Make {0} close calls
+    baseTarget: 50
+    perCheckpoint: 0.05
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: w_boosts
+    kind: 3
+    difficulty: 1
+    weekly: 1
+    text: Finish {0} boosts
+    baseTarget: 20
+    perCheckpoint: 0.05
+    minCheckpoint: 2
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: w_coins
+    kind: 13
+    difficulty: 2
+    weekly: 1
+    text: Collect {0} coins
+    baseTarget: 2000
+    perCheckpoint: 0.05
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 1
+    maxTarget: 999999
+  - id: w_daily
+    kind: 17
+    difficulty: 2
+    weekly: 1
+    text: Claim the daily reward {0} times
+    baseTarget: 5
+    perCheckpoint: 0
+    minCheckpoint: 1
+    oneRun: 0
+    tierScaled: 0
+    maxTarget: 999999
+  awards:
+  - id: first_portal
+    title: Through the door
+    text: Cross your first portal
+    coins: 100
+  - id: clear_L1
+    title: Start cleared
+    text: Clear level 1 for the first time
+    coins: 100
+  - id: clear_L2
+    title: Crimson cleared
+    text: Clear level 2 for the first time
+    coins: 200
+  - id: clear_L3
+    title: Toon cleared
+    text: Clear level 3 for the first time
+    coins: 300
+  - id: clear_L4
+    title: Pixel cleared
+    text: Clear level 4 for the first time
+    coins: 400
+  - id: clear_L5
+    title: Storybook cleared
+    text: Clear level 5 for the first time
+    coins: 500
+  - id: clear_L6
+    title: Blossom cleared
+    text: Clear level 6 for the first time
+    coins: 600
+  - id: clear_L7
+    title: Brick Meadow cleared
+    text: Clear level 7 for the first time
+    coins: 700
+  - id: clear_L8
+    title: Sketchbook cleared
+    text: Clear level 8 for the first time
+    coins: 800
+  - id: clear_L9
+    title: Rogue Planet cleared
+    text: Clear level 9 for the first time
+    coins: 900
+  - id: clean_level
+    title: Untouched
+    text: Clear a level with no rescue
+    coins: 300
+  - id: perfect_b3
+    title: Off-beat
+    text: A perfect broken-rhythm boost
+    coins: 250
+  - id: streak_7
+    title: One week
+    text: A 7-day streak
+    coins: 500
+  - id: streak_30
+    title: One month
+    text: A 30-day streak
+    coins: 2000
+  - id: freefall
+    title: Freefall
+    text: Reach Freefall
+    coins: 1000
+  - id: ff_25
+    title: Freefall 25
+    text: Score 25 in Freefall
+    coins: 125
+  - id: ff_50
+    title: Freefall 50
+    text: Score 50 in Freefall
+    coins: 250
+  - id: ff_100
+    title: Freefall 100
+    text: Score 100 in Freefall
+    coins: 500
+  - id: ff_200
+    title: Freefall 200
+    text: Score 200 in Freefall
+    coins: 1000
+  - id: boost_0
+    title: Classic boost
+    text: Survive your first classic boost
+    coins: 50
+  - id: boost_1
+    title: Long boost
+    text: Survive your first long boost
+    coins: 75
+  - id: boost_2
+    title: Broken-rhythm boost
+    text: Survive your first broken-rhythm boost
+    coins: 100
+  - id: boost_3
+    title: Boost exit
+    text: Survive your first boost exit
+    coins: 125
+  - id: design_0
+    title: Pillar
+    text: Get through your first pillar
+    coins: 50
+  - id: design_1
+    title: Pillar pair
+    text: Get through your first pillar pair
+    coins: 75
+  - id: design_2
+    title: L corner
+    text: Get through your first l corner
+    coins: 100
+  - id: design_3
+    title: Pillar fence
+    text: Get through your first pillar fence
+    coins: 125
+  - id: design_4
+    title: Sliding pillar
+    text: Get through your first sliding pillar
+    coins: 150
+  - id: design_5
+    title: Twin sliders
+    text: Get through your first twin sliders
+    coins: 175
+  - id: design_6
+    title: Sliding L
+    text: Get through your first sliding l
+    coins: 200

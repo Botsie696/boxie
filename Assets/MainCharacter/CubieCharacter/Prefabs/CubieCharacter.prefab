@@ -1,0 +1,200 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &8802266017967765446
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_Name
+      value: CubieCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: fe0a40d7979ef344aa69a0ec39c2e116, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8222228434596987034}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1012832082647246144}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 2069272302237518574}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8824075935571633316}
+  m_SourcePrefab: {fileID: 100100000, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+--- !u!95 &3120286350661995095 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+  m_PrefabInstance: {fileID: 8802266017967765446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &8567684460092902039 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: 85b87e0b6738e8a47b1a84c2de44fd60, type: 3}
+  m_PrefabInstance: {fileID: 8802266017967765446}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &8222228434596987034
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567684460092902039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c4b7ee9085411ba419061e73e0d0f76e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cubie.CubieFurPhysics
+  groups:
+  - namePrefix: Fur_
+    stiffness: 120
+    damping: 9
+    gravity: 0.15
+    airInfluence: 1
+    inertia: 1
+    maxAngle: 45
+    tipLength: 0.12
+  - namePrefix: Tuft_
+    stiffness: 70
+    damping: 6
+    gravity: 0.3
+    airInfluence: 1.2
+    inertia: 1
+    maxAngle: 60
+    tipLength: 0.15
+  - namePrefix: Bow
+    stiffness: 220
+    damping: 12
+    gravity: 0.2
+    airInfluence: 0.5
+    inertia: 0.8
+    maxAngle: 25
+    tipLength: 0.06
+  - namePrefix: Glasses
+    stiffness: 900
+    damping: 35
+    gravity: 0.1
+    airInfluence: 0
+    inertia: 0.4
+    maxAngle: 5
+    tipLength: 0.08
+  wind: {x: 0, y: 0, z: 0}
+  windStrength: 0.9
+  turbulence: 0.35
+  turbulenceFrequency: 2.5
+  externalVelocity: {x: 0, y: 0, z: 0}
+  useTransformVelocity: 1
+  teleportDistance: 1
+  groundCollision: 1
+  groundOffset: 0.006
+  groundFriction: 0.3
+  grounded: 1
+  weight: 1
+--- !u!114 &1012832082647246144
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567684460092902039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c1225b6090b93c44bb672f4703d4bec4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cubie.CubieFace
+  lookTarget: {fileID: 0}
+  lookX: 0
+  lookY: 0
+  maxEyeAngle: 30
+  lidOpen: 0
+  close: 0
+  browAngry: 0
+  browRaise: 0
+  browMaxAngle: 20
+  browMaxRaise: 0.03
+  mouthOpen: 0
+  mouthWide: 0
+  mouthTremble: 0
+--- !u!114 &2069272302237518574
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567684460092902039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 892024feff943aa4b9576e7885a1594c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cubie.CubieColors
+  apply: 0
+  furColor: {r: 1, g: 0.56, b: 0.5, a: 1}
+  browColor: {r: 0.05, g: 0.6, b: 0.62, a: 1}
+  skinColor: {r: 0.95, g: 0.48, b: 0.42, a: 1}
+  bowColor: {r: 0.55, g: 0.95, b: 0.8, a: 1}
+--- !u!114 &8824075935571633316
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8567684460092902039}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1d30e31617dd73c41af9c6792fd9e08c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Cubie.CubieBlinker
+  animator: {fileID: 3120286350661995095}
+  trigger: Blink
+  intervalSeconds: {x: 2.5, y: 6}
+  doubleBlinkChance: 0.15

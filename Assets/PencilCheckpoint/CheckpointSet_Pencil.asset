@@ -1,0 +1,38 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 468cce1410768514daa480c3ab673fd4, type: 3}
+  m_Name: CheckpointSet_Pencil
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointSet
+  checkpoints:
+  - {fileID: 11400000, guid: c1f2da1069cf66d4c997af0b924ca1d5, type: 2}
+  - {fileID: 11400000, guid: 741705efc58234e4396e85efc4eb57f6, type: 2}
+  - {fileID: 11400000, guid: 8fd64215173c72d4e91094cad35594cf, type: 2}
+  - {fileID: 11400000, guid: a001df9107a364849a2192856b8f1833, type: 2}
+  - {fileID: 11400000, guid: 0232307f80b95a148a5c36b7570ce6a8, type: 2}
+  - {fileID: 11400000, guid: 3b1851bab00205745b7279d3a589941d, type: 2}
+  - {fileID: 11400000, guid: b82dcd3fb477563418af15ee8218b645, type: 2}
+  - {fileID: 11400000, guid: cb8ab4828762f9243a616547fc3ae96f, type: 2}
+  - {fileID: 11400000, guid: c92057e279fbc584f88d92fc0bb4dcb6, type: 2}
+  - {fileID: 11400000, guid: c97606832ee9ed04692674d15a11da14, type: 2}
+  legsBetweenPortals: 50
+  defaultTiming:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0
+  scheduleProfile: {fileID: 0}

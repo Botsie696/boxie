@@ -1,0 +1,35 @@
+=== seed 1
+[Specials311] level 2 (60 legs, finale 37-56, Staircase): boostClassic@10x5 runway@24x1 
+[Specials311] level 3 (70 legs, finale 47-66, LongBoostExit): boostClassic@12x7 runway@24x1 slowmo@30x6 boostExit@50x9F 
+[Specials311] level 4 (75 legs, finale 47-71, DecoyGauntlet): runway@5x1 slowmo@12x9 runway@27x1 boostClassic@33x8 
+[Specials311] level 5 (80 legs, finale 49-76, RunwaySlowBurst): boostBroken@7x9 runway@20x1 boostClassic@30x8 runway@51x1F slowmo@56x13F 
+[Specials311] level 6 (65 legs, finale 37-61, Mild): boostClassic@5x8 runway@17x1 slowmo@23x14 boostLong@43x12 
+[Specials311] level 7 (85 legs, finale 54-81, SliderRunwayBurst): runway@7x1 boostExit@13x8 runway@27x1 boostExit@39x8 runway@57x1F 
+[Specials311] level 8 (90 legs, finale 57-86, LongBoostDecoys): runway@8x1 boostExit@17x9 runway@31x1 boostClassic@42x9 boostLong@60x14F 
+[Specials311] level 9 (100 legs, finale 67-96, MixAll): boostExit@5x11 runway@20x1 boostBroken@27x12 runway@43x1 boostLong@49x12 runway@69x1F slowmo@74x14F 
+[Specials311] level 10 (60 legs, finale 37-56, Staircase): runway@5x1 boostClassic@11x11 runway@26x1 
+[Specials311] level 11 (60 legs, finale 37-56, LongBoostExit): runway@6x1 boostLong@13x11 runway@29x1 boostExit@40x14F 
+[Specials311] level 12 (60 legs, finale 37-56, DecoyGauntlet): runway@5x1 boostClassic@11x11 runway@27x1 
+=== seed 2
+[Specials311] level 2 (60 legs, finale 37-56, Staircase): runway@14x1 boostClassic@22x6 
+[Specials311] level 3 (70 legs, finale 47-66, LongBoostExit): boostClassic@14x7 runway@25x1 slowmo@34x5 boostExit@50x9F 
+[Specials311] level 4 (75 legs, finale 47-71, DecoyGauntlet): runway@5x1 boostClassic@11x7 slowmo@22x10 runway@39x1 
+[Specials311] level 5 (80 legs, finale 49-76, RunwaySlowBurst): boostLong@5x12 runway@21x1 boostBroken@32x8 runway@51x1F slowmo@56x12F 
+[Specials311] level 6 (65 legs, finale 37-61, Mild): runway@5x1 slowmo@11x18 boostLong@36x8 boostLong@50x8 
+[Specials311] level 7 (85 legs, finale 54-81, SliderRunwayBurst): runway@11x1 boostExit@19x8 runway@31x1 boostBroken@39x8 runway@57x1F 
+[Specials311] level 8 (90 legs, finale 57-86, LongBoostDecoys): runway@10x1 boostExit@16x9 runway@30x1 boostBroken@39x9 boostLong@60x14F 
+[Specials311] level 9 (100 legs, finale 67-96, MixAll): boostClassic@5x11 runway@21x1 boostBroken@27x11 runway@43x1 boostClassic@49x12 runway@69x1F slowmo@74x14F 
+[Specials311] level 10 (60 legs, finale 37-56, Staircase): runway@6x1 boostClassic@13x11 runway@28x1 
+[Specials311] level 11 (60 legs, finale 37-56, LongBoostExit): runway@6x1 boostClassic@13x11 runway@28x1 boostExit@40x14F 
+[Specials311] level 12 (60 legs, finale 37-56, DecoyGauntlet): boostClassic@5x11 runway@20x1 runway@29x1 
+=== seed 3
+[Specials311] level 2 (60 legs, finale 37-56, Staircase): boostClassic@19x5 runway@28x1 
+[Specials311] level 3 (70 legs, finale 47-66, LongBoostExit): runway@8x1 boostLong@18x9 slowmo@32x6 boostExit@50x9F 
+[Specials311] level 4 (75 legs, finale 47-71, DecoyGauntlet): slowmo@5x10 runway@21x1 boostLong@27x8 runway@39x1 
+[Specials311] level 5 (80 legs, finale 49-76, RunwaySlowBurst): boostLong@5x13 runway@26x1 boostClassic@35x8 runway@51x1F slowmo@56x12F 
+[Specials311] level 6 (65 legs, finale 37-61, Mild): runway@5x1 boostBroken@11x8 slowmo@23x15 boostLong@44x12 
+[Specials311] level 7 (85 legs, finale 54-81, SliderRunwayBurst): boostClassic@7x8 runway@21x1 boostExit@29x8 runway@44x1 runway@57x1F 
+[Specials311] level 8 (90 legs, finale 57-86, LongBoostDecoys): boostLong@10x9 runway@23x1 boostLong@29x9 runway@44x1 boostLong@60x14F 
+[Specials311] level 9 (100 legs, finale 67-96, MixAll): runway@5x1 boostLong@11x12 runway@27x1 boostExit@33x12 boostExit@51x12 runway@69x1F slowmo@74x14F 
+[Specials311] level 10 (60 legs, finale 37-56, Staircase): boostClassic@5x11 runway@20x1 runway@28x1 
+[Specials311] level 11 (60 legs, finale 37-56, LongBoostExit): boostLong@7x11 runway@22x1 runway@30x1 boostExit@40x14F 

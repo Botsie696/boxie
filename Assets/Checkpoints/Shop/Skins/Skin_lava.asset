@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_lava
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: lava
+  displayName: Lava
+  tagline: Leaves a warm trail.
+  rarity: 2
+  price: 1500
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: 7c9a52db58660ff4cb50a399d6715e38, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 0.16, g: 0.08, b: 0.07, a: 1}
+  overrideTrail: 1
+  trailHead: {r: 1, g: 0.85, b: 0.4, a: 1}
+  trailMid: {r: 1, g: 0.38, b: 0.08, a: 1}
+  trailTail: {r: 0.6, g: 0.05, b: 0.02, a: 0}
+  attachedParticles: {fileID: 6701764596094752270, guid: f3369cd0c6faf7f4aa53496d6e42eb95, type: 3}
+  rollSfx: {fileID: 8300000, guid: 3a24464b3077c1942a58082e3b00566b, type: 3}
+  landingSquash: 0.08
+  deathBurstPrefab: {fileID: 705251440335051181, guid: 2854113eda0db5d42bc2bd777f96e7db, type: 3}

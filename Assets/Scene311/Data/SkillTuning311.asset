@@ -1,0 +1,96 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5c1002b04a2d1e4faf51194fe703967, type: 3}
+  m_Name: SkillTuning311
+  m_EditorClassIdentifier: Assembly-CSharp::SkillTuning311
+  tiers:
+  - name: Struggling
+    budget: 0.75
+    tHumanAdd: 0.1
+    rescueAdd: 0.04
+    stations: -2
+    boostLength: -0.3
+    decoys: 0.5
+    releaseAdd: 2
+    shieldFreq: 1.5
+    speed: 0.94
+  - name: Below
+    budget: 0.88
+    tHumanAdd: 0.05
+    rescueAdd: 0.02
+    stations: -1
+    boostLength: -0.15
+    decoys: 0.75
+    releaseAdd: 1
+    shieldFreq: 1.25
+    speed: 1
+  - name: Average
+    budget: 1
+    tHumanAdd: 0
+    rescueAdd: 0
+    stations: 0
+    boostLength: 0
+    decoys: 1
+    releaseAdd: 0
+    shieldFreq: 1
+    speed: 1
+  - name: Above
+    budget: 1.08
+    tHumanAdd: -0.02
+    rescueAdd: -0.01
+    stations: 1
+    boostLength: 0.1
+    decoys: 1.1
+    releaseAdd: 0
+    shieldFreq: 1
+    speed: 1
+  - name: Expert
+    budget: 1.15
+    tHumanAdd: -0.03
+    rescueAdd: -0.02
+    stations: 2
+    boostLength: 0.2
+    decoys: 1.2
+    releaseAdd: 0
+    shieldFreq: 0.8
+    speed: 1
+  rescueCap: 0.12
+  rescueMin: 0.02
+  stationsMin: 4
+  stationsMax: 10
+  startRating: 1500
+  pointsPerTier: 150
+  kStart: 40
+  kMin: 6
+  kHalfLegs: 300
+  featureKScale: 1.5
+  legBase: 700
+  costWeight: 60
+  slackWeight: 900
+  slackRef: 0.35
+  eloScale: 400
+  collectOnlyRuns: 3
+  weakFeatureTiers: 1
+  attemptTargets:
+  - {x: 1, y: 3}
+  - {x: 2, y: 5}
+  - {x: 3, y: 6}
+  - {x: 5, y: 10}
+  - {x: 8, y: 14}
+  - {x: 4, y: 8}
+  - {x: 14, y: 24}
+  - {x: 20, y: 32}
+  - {x: 30, y: 45}
+  pushTiers: 0.5
+  mercyStepShare: 0.25
+  mercyMaxSteps: 2
+  devOverlay: 1

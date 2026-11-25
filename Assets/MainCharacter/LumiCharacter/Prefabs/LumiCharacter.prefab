@@ -1,0 +1,188 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1001 &3608044189292997835
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_Name
+      value: LumiCharacter
+      objectReference: {fileID: 0}
+    - target: {fileID: 5866666021909216657, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: e9aa94ac205a44547974504d81832a45, type: 2}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1831180570572863072}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 5454228239843780951}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 7151513010044066176}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 8885361615809014591}
+  m_SourcePrefab: {fileID: 100100000, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+--- !u!1 &4527015664660353434 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 919132149155446097, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+  m_PrefabInstance: {fileID: 3608044189292997835}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1831180570572863072
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527015664660353434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b31b2b12dd966914aaaa9c0e3deeb587, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lumi.LumiFurPhysics
+  groups:
+  - namePrefix: Fur_
+    stiffness: 120
+    damping: 9
+    gravity: 0.15
+    airInfluence: 1
+    inertia: 1
+    maxAngle: 45
+    tipLength: 0.12
+  - namePrefix: Pony_
+    stiffness: 60
+    damping: 4.5
+    gravity: 0.45
+    airInfluence: 1.3
+    inertia: 1
+    maxAngle: 65
+    tipLength: 0.14
+  wind: {x: 0, y: 0, z: 0}
+  windStrength: 0.9
+  turbulence: 0.35
+  turbulenceFrequency: 2.5
+  externalVelocity: {x: 0, y: 0, z: 0}
+  useTransformVelocity: 1
+  teleportDistance: 1
+  groundCollision: 1
+  groundOffset: 0.006
+  groundFriction: 0.3
+  grounded: 1
+  weight: 1
+--- !u!114 &5454228239843780951
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527015664660353434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bc40eb2d94091494ea10cdf5dda61d77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lumi.LumiFace
+  lookTarget: {fileID: 0}
+  lookX: 0
+  lookY: 0
+  maxEyeAngle: 30
+  lidOpen: 0
+  close: 0
+  browAngry: 0
+  browRaise: 0
+  browMaxAngle: 20
+  browMaxRaise: 0.03
+  smile: 0
+  smirk: 0
+--- !u!114 &7151513010044066176
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527015664660353434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5ccd33ed1349bbd41854fe053a2973f4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lumi.LumiColors
+  apply: 0
+  furColor: {r: 1, g: 0.66, b: 0.08, a: 1}
+  browColor: {r: 0.1, g: 0.92, b: 0.82, a: 1}
+  browGlow: 2.6
+  skinColor: {r: 0.8, g: 0.4, b: 0.04, a: 1}
+  lipColor: {r: 0.7, g: 0.17, b: 0.27, a: 1}
+  bowColor: {r: 0.1, g: 0.78, b: 0.72, a: 1}
+  hairColor: {r: 0.045, g: 0.045, b: 0.06, a: 1}
+  glowColor: {r: 1, g: 0.86, b: 0.32, a: 1}
+  glowIntensity: 3
+--- !u!114 &8885361615809014591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4527015664660353434}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 528f588c4fb56c24fb3964773ba37c5b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: Assembly-CSharp::Lumi.LumiBlinker
+  animator: {fileID: 7167703910884839770}
+  trigger: Blink
+  intervalSeconds: {x: 2.5, y: 6}
+  doubleBlinkChance: 0.15
+--- !u!95 &7167703910884839770 stripped
+Animator:
+  m_CorrespondingSourceObject: {fileID: 5866666021909216657, guid: e6ba0d74a76913c4f86371144031341d, type: 3}
+  m_PrefabInstance: {fileID: 3608044189292997835}
+  m_PrefabAsset: {fileID: 0}

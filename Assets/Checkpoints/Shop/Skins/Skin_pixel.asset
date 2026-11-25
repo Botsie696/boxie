@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_pixel
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: pixel
+  displayName: Pixel
+  tagline: 8 bits of attitude.
+  rarity: 3
+  price: 3500
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: f8693db1c85ef364c902944e1413278f, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 1, g: 0.34, b: 0.56, a: 1}
+  overrideTrail: 1
+  trailHead: {r: 1, g: 0.85, b: 0.24, a: 1}
+  trailMid: {r: 1, g: 0.34, b: 0.56, a: 1}
+  trailTail: {r: 0.28, g: 0.84, b: 1, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 8300000, guid: 3ddcf3a9468671540a1e6e29baaf1ca4, type: 3}
+  landingSquash: 0.12
+  deathBurstPrefab: {fileID: 2322717027776200910, guid: 638e2ef0ac5f1d34885c1e0284985ab9, type: 3}

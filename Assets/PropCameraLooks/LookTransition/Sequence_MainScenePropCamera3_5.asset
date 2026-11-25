@@ -1,0 +1,81 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0d9eec5edf37f1e45bcac3092999664f, type: 3}
+  m_Name: Sequence_MainScenePropCamera3_5
+  m_EditorClassIdentifier: Assembly-CSharp::CheckpointLookSequence
+  baseLook: {fileID: 11400000, guid: 333636314be9c7941924f58dd5f52036, type: 2}
+  defaultTiming:
+    followThrough: 0.8
+    reveal: 1.6
+    riseBack: 1
+    readTime: 1.5
+    settleEnd: 7
+    speedFloor: 0.85
+    speedEaseIn: 0.4
+    runwayMargin: 0.15
+    wipeDelay: 0
+    wipeDuration: 0
+  entries:
+  - portal: 1
+    look: {fileID: 11400000, guid: 91ec97e90118bd744906c6034a1b4002, type: 2}
+    label: 
+    cameraCinematic: 1
+    keepObstacle: 1
+    takePlankColor: 1
+    overrideTiming: 0
+    timing:
+      followThrough: 0.8
+      reveal: 1.6
+      riseBack: 1
+      readTime: 1.5
+      settleEnd: 7
+      speedFloor: 0.85
+      speedEaseIn: 0.4
+      runwayMargin: 0.15
+      wipeDelay: 0
+      wipeDuration: 0
+  - portal: 2
+    look: {fileID: 11400000, guid: 000be189f295d764a96fbcd1e2b2ca01, type: 2}
+    label: 
+    cameraCinematic: 1
+    keepObstacle: 1
+    takePlankColor: 1
+    overrideTiming: 0
+    timing:
+      followThrough: 0.8
+      reveal: 1.6
+      riseBack: 1
+      readTime: 1.5
+      settleEnd: 7
+      speedFloor: 0.85
+      speedEaseIn: 0.4
+      runwayMargin: 0.15
+      wipeDelay: 0
+      wipeDuration: 0
+  - portal: 4
+    look: {fileID: 11400000, guid: 7d5fdb6b830893d4f93437ebbeac70be, type: 2}
+    label: 
+    cameraCinematic: 1
+    keepObstacle: 0
+    takePlankColor: 1
+    overrideTiming: 0
+    timing:
+      followThrough: 0.8
+      reveal: 1.6
+      riseBack: 1
+      readTime: 1.5
+      settleEnd: 7
+      speedFloor: 0.85
+      speedEaseIn: 0.4
+      runwayMargin: 0.15
+      wipeDelay: 0
+      wipeDuration: 0

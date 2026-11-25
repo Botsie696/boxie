@@ -1,0 +1,88 @@
+MAINSCENE PROP CAMERA 2 - FAIR DIFFICULTY RETUNE + CLOSE CALL (+1)
+====================================================================
+
+SCOPE
+- Every new behaviour is gated by DynamicPathGenerator.difficultyProfile. Empty = the original game.
+- Only "Assets/MainScene prop camera 2.unity" has one: Assets/Difficulty/MainScenePropCamera2_Difficulty.asset.
+  Scene change: that single reference on the DynamicPathGenerator (scene saved). No other scene touched.
+- Other scenes: assign the asset (or a copy) on their generator; each feature has a tick box in the asset
+  (timeBudgetLegs, useProfileSpeedCurve, fairInput, fairCorners, wavePacing, cameraOverrides, feedbackFX, telemetry).
+
+FILES
+New:  Scripts/Difficulty/DifficultyProfile.cs, RunTelemetry.cs, HumanSimPlayer.cs (+ K hotkey), RescueSelfTest.cs
+      Scripts/CloseCallFX.cs
+      Scripts/DynamicPathGenerator.TimeBudget.cs / .Waves.cs / .HazardBudget.cs / .Fairness.cs / .Analysis.cs
+      Assets/Difficulty/MainScenePropCamera2_Difficulty.asset, Assets/Difficulty/RunnerRim.mat
+Edited (all changes inert without a profile):
+      PlayerController.cs (CubeRailRunner), DynamicPathGenerator.cs, ...Boost.cs, ...Bridge.cs, ...Portal.cs,
+      ...Decoy.cs, ...Obstacle.cs, ...Coins.cs, BridgePlankGuard.cs, RunnerHUD.cs, ActiveFaceHighlight.cs,
+      TurnFaceArrows.cs, RunnerTrailFX.cs, RunnerVisualRig.cs, Haptics.cs, Plugins/iOS/Haptics.mm (medium haptic)
+
+WHAT CHANGED
+- Legs laid by TIME: floor = landing lock + rolls + cooldowns + deadline + T_human(taps, leg). Boost legs,
+  plank gaps (time-spaced by face change), bridge lead-outs, portal runways and obstacle margins use the same rule.
+  A 2-roll turn is only offered when the leg has time for it; if only a 2-roll turn keeps clear, the leg before
+  is lengthened in place. Every leg is validated (errors logged as [TimeBudget]).
+- Speed: hold for 6 legs then exponential to vCap; per-leg changes eased over 0.3 s.
+- Input: fire on touch-down, every finger counts, swipe conversion only before the roll starts, a tap within
+  0.15 s before a corner is buffered for the next leg (never lost), landing lock 0.03 s, double-tap / swipe
+  up-down = flip (two taps still work), no hidden left/right swap.
+- Corners decided by the runner's logical face at an exact point (sub-step overshoot carried onto the next leg),
+  matching the visual edge; the face lane and chevrons end at that point.
+- CLOSE CALL: a correct input up to 0.09 s late (max 3.5 cubes past) still makes the corner / plank. Only the
+  minimum rolls count, wrong direction / over-rotation / decoy never rescued, one rescue per leg (per plank).
+  The runner whips round the corner edge (0.06 s roll + arc blend), +1 bonus point. Feedback: "+1" pop above the
+  runner with "CLOSE!", gold shockwave + sparks, lane flash, chevron flare, screen-edge glow, score punch,
+  medium haptic, 35 ms hit-stop (not in boosts).
+- Waves per 30-leg portal cycle: RELEASE 1-5 / BUILD 6-20 / PEAK 21-27 (boost on odd cycles, bridge cluster on
+  even) / COOL-DOWN. Onboarding cycle: 5-leg boost at 14, teaching decoy, teaching bridge, then a teaching
+  multi-plank. Hazard budget + cost caps, no stacking, after a cost>=5 leg the next <=2, breathers, glide legs,
+  late-game pattern families, no coin lures on hard legs. Camera turns only into RELEASE / portal-runway zones,
+  and portals prefer the current camera yaw.
+- Camera: speed zoom cap x1.15, boost zoom x1.15 (0.5 s in / 0.4 s out), set at run time. Runner rim (inverted
+  hull, RunnerRim.mat). Chevrons glow steady ("hold") when already on the right face. Trail brightness rides the
+  wave phase; small flare on clean corners and on clearing a boost.
+
+SIMULATED RESULTS (HumanSimPlayer batch: 40 seeded paths x 400 legs, 200 runs per model, spec human model:
+reaction skilled 0.25+/-0.04 / average 0.42+/-0.07, noise 0.035/0.05, 1% wrong direction, 3% near camera turns)
+
+BEFORE (current game)
+  Average: alive at 10/30/60: 88% / 0% / 0%   median 14   boost p 50% (x29 ordinary), deaths: boost 77% corner 24%
+           NEAR_LATE 18.5%, MAP_CHANGE 11.5%
+  Skilled: alive at 10/30/60: 95% / 0% / 0%   median 15   boost p 45% (x71 ordinary), deaths: boost 90%
+           NEAR_LATE 79%
+  (Real testers reach ~leg 30 because they anticipate the boost rhythm; the spec model reacts from leg entry.)
+
+AFTER (first profile values)
+  Average: alive at 10/30/60/100/150/200/300: 100/97/82/65/44/28/11%   median 140
+           p: ordinary 0.46%, boost 1.01% (x2.2), bridge 1.24% (x2.7), decoy x1.0, portal x0.1
+           deaths: corner 57% boost 35% plank 7%   NEAR_LATE 6.9%  MAP_CHANGE 7.4%  LOST_TAP 0
+  Skilled: alive at 100/150/200/300: 97/85/70/44%   median 268
+           p: ordinary 0.14%, boost x3.9, bridge x4.0   deaths: boost 48% corner 40% plank 12%
+           NEAR_LATE 13.8%  MAP_CHANGE 2.2%
+  Floor violations in that run: 183 of 16,754 legs -> both causes fixed afterwards (rounding of 0.1 cube; fallback
+  to a too-short leg when only a 2-roll turn kept clear). Not re-measured yet.
+
+  Verdict: far fairer (boost no longer the wall) but TOO EASY versus the targets (average median 60-120,
+  skilled 120-250). So the profile was made harder (values below). Not re-simulated yet.
+
+PROFILE VALUES NOW IN THE ASSET (harder pass)
+  durOnboarding 1.20-1.55 -> 1.00-1.30     durRamp 0.90-1.25 -> 0.80-1.10
+  durMastery    0.75-1.05 -> 0.68-0.95     durFloor 0.70-1.00 -> 0.62-0.90
+  tau 90 -> 70      vCap 32 -> 33
+  tHuman1 0.90/0.55/0.40/0.38 -> 0.75/0.50/0.38/0.36
+  tHuman2 1.00/0.65/0.48/0.45 -> 0.85/0.58/0.45/0.42
+  buildAvg 1.6 -> 1.8      peakBudget 3.0 -> 3.4
+  Expected (estimate): average median ~70-100, ~10-20% end before leg 30; skilled median ~160-220.
+
+HOW TO VERIFY (when there is time)
+  - Batch: in Play mode run HumanSimPlayer.RunBatch("AFTER", HumanSimPlayer.Mech.New(profile), 40, 400, 200, 11, out _)
+    (after gen.player.ApplyProfile(profile, gen)); BEFORE uses an all-off profile + Mech.Old().
+  - Rescue cases a-i: add RescueSelfTest to any object in Play mode; it logs PASS/FAIL/SKIP per case.
+  - Live human model: press K in Play mode. Telemetry CSVs: tick "telemetry" in the profile ->
+    Application.persistentDataPath/RunTelemetry.
+
+NOT DONE / KNOWN GAPS
+  - Not play-tested by eye: close-call FX, rim look, hold cue. AutoPlayer 320-leg check not re-run.
+  - Runner kept in 35-65% of screen width: skipped (with the zone camera it would force a much wider zoom).
+  - Obstacles are off in this scene; they have time margins and budget gating if switched on.

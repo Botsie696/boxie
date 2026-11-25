@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_neon
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: neon
+  displayName: Neon Wireframe
+  tagline: Lives on the edges.
+  rarity: 1
+  price: 500
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: 2c84b8af5fa95574baf8c2e61dc683e9, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 0.2, g: 1, b: 0.92, a: 1}
+  overrideTrail: 1
+  trailHead: {r: 0.7, g: 1, b: 0.97, a: 1}
+  trailMid: {r: 0.2, g: 1, b: 0.92, a: 1}
+  trailTail: {r: 1, g: 0.2, b: 0.85, a: 0}
+  attachedParticles: {fileID: 0}
+  rollSfx: {fileID: 8300000, guid: 03e176d539ce163419a83983d420dfd0, type: 3}
+  landingSquash: 0.04
+  deathBurstPrefab: {fileID: 3700590478552783114, guid: 63d8a78c49282924499570e09059a8c1, type: 3}

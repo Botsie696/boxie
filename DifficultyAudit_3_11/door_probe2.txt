@@ -1,0 +1,17 @@
+run0 ENTER cubes=30 spd=20.3 land=2 door=0 q=0 | t+0.29 side 2 q 1 | t+0.56 side 0 q 0 || DEATH cause=portal t+1.39 side=0 distToEnd=-0.68 onEntry=True
+run1 ENTER cubes=30 spd=20.3 land=1 door=0 q=0 | t+0.29 side 1 q 1 | t+0.34 side 0 q 0 || DEATH cause=portal t+1.39 side=0 distToEnd=-0.96 onEntry=True
+run2 ENTER cubes=30 spd=22.8 land=3 door=0 q=0 | t+0.25 side 3 q 1 | t+0.33 side 0 q 0 || CROSSED t+1.23
+run3 ENTER cubes=30 spd=22.8 land=0 door=0 q=0 || CROSSED t+1.19
+run4 ENTER cubes=30 spd=22.8 land=3 door=0 q=0 | t+0.19 side 3 q 1 | t+0.29 side 0 q 0 || DEATH cause=portal t+1.30 side=0 distToEnd=-2.17 onEntry=True
+run5 ENTER cubes=30 spd=22.8 land=0 door=0 q=0 || DEATH cause=portal t+1.35 side=0 distToEnd=-3.80 onEntry=True
+run6 ENTER cubes=30 spd=22.8 land=3 door=0 q=0 | t+0.30 side 3 q 1 | t+0.57 side 0 q 0 || DEATH cause=portal t+1.08 side=0 distToEnd=-1.29 onEntry=True
+run7 ENTER cubes=30 spd=22.8 land=1 door=0 q=0 | t+0.14 side 1 q 1 | t+0.27 side 0 q 0 || CROSSED t+1.18
+run8 ENTER cubes=30 spd=20.3 land=3 door=0 q=0 | t+0.10 side 3 q 1 | t+0.26 side 0 q 0 || CROSSED t+1.35
+run9 ENTER cubes=30 spd=20.3 land=0 door=0 q=0 || CROSSED t+1.36
+run10 ENTER cubes=30 spd=22.8 land=0 door=0 q=0 || CROSSED t+1.11
+run11 ENTER cubes=30 spd=20.3 land=1 door=0 q=0 | t+0.25 side 1 q 1 | t+0.30 side 0 q 0 || CROSSED t+1.35
+run12 ENTER cubes=30 spd=20.3 land=3 door=0 q=0 | t+0.28 side 3 q 1 | t+0.33 side 0 q 0 || CROSSED t+1.38
+run13 ENTER cubes=30 spd=20.3 land=0 door=0 q=0 || CROSSED t+1.40
+run14 ENTER cubes=30 spd=22.8 land=3 door=0 q=0 | t+0.26 side 3 q 1 | t+0.33 side 0 q 0 || CROSSED t+1.11
+run15 ENTER cubes=30 spd=20.3 land=3 door=0 q=0 | t+0.18 side 3 q 1 | t+0.22 side 0 q 0 || CROSSED t+1.50
+DONE

@@ -1,0 +1,31 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8a97a2e31c8dabe41b017452a6cb8e1a, type: 3}
+  m_Name: Skin_ice
+  m_EditorClassIdentifier: Assembly-CSharp::CubeSkin
+  id: ice
+  displayName: Ice
+  tagline: Shatters in frost.
+  rarity: 2
+  price: 2500
+  mesh: {fileID: 0}
+  material: {fileID: 2100000, guid: 76bb0019a8300184b9465b667e48b4fa, type: 2}
+  keepSceneLook: 0
+  uiColor: {r: 0.66, g: 0.88, b: 1, a: 1}
+  overrideTrail: 1
+  trailHead: {r: 1, g: 1, b: 1, a: 1}
+  trailMid: {r: 0.7, g: 0.92, b: 1, a: 1}
+  trailTail: {r: 0.7, g: 0.92, b: 1, a: 0}
+  attachedParticles: {fileID: 4449429985924975410, guid: e0e14c15b3b2c3a4da9fb9b5b00d0108, type: 3}
+  rollSfx: {fileID: 8300000, guid: fa34cc5da7a6139428c912113bbf26e9, type: 3}
+  landingSquash: 0.05
+  deathBurstPrefab: {fileID: 3616476338471712835, guid: 4f71f387436ff8546b5895e26eef9fe9, type: 3}
